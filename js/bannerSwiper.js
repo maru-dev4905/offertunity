@@ -17,3 +17,29 @@ var bannerSlide = new Swiper(".banner-swiper", {
     // 드래그 막는 코드
     simulateTouch:false
 });
+
+var programSlide = new Swiper(".program-swiper", {
+    navigation: {
+        nextEl: ".program-button-next",
+        prevEl: ".program-button-prev",
+    },
+    slidesPerView: 3,
+    slidesPerGroup: 3,
+    loop: true,
+    speed:750,
+});
+
+var programSlide2 = new Swiper(".program-swiper2", {
+    loop: true,
+    slidesPerView: "auto",
+    pagination: {
+        el: ".program2-pagination",
+    },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    speed:1000,
+    // 드래그 막는 코드
+    simulateTouch:false
+});

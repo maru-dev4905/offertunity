@@ -9,6 +9,7 @@
     <!-- css -->
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/animation.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/main.css">
 
@@ -67,7 +68,11 @@
     </header>
 
     <main>
-        <section class="banner-slide">
+        <div class="obj-group">
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <section class="banner-slide slide-inner">
             <div class="banner-swiper swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -88,9 +93,101 @@
             <div class="banner-button-next swiper-button-next"></div>
             <div class="banner-button-prev swiper-button-prev"></div>
         </section>
+        <section>
+            <div class="sec-title">
+                    <div class="inner">
+                    <span>New Program</span>
+                    <h2>
+                        이런 프로그램은 어떠세요?
+                        <img src="./images/icons/ico-emoticonFinger.svg" alt="emoticon-finger">
+                    </h2>
+                </div>
+            </div>
+            <div class="program-slide slide-inner">
+                <div class="program-swiper swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <a href="#">
+                                    <div class="img-wrap">
+                                        <img src="./images/main/card/card01.jpg" alt="card-thumbnail">
+                                    </div>
+                                    <div class="card-content">
+                                        <span class="card-subTitle">중소벤처기업부</span>
+                                        <h3 class="card-title">초기창업 패키지 글로벌 기술 사업화 프로그램 모집공고</h3>
+                                        <ul class="card-tag">
+                                            <li class="card-kind white-style">엑셀러레이팅</li>
+                                            <li class="card-dDay blue-style">D-15</li>
+                                            <li class="card-reserve red-style">예비창업자</li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <a href="#">
+                                    <div class="img-wrap">
+                                        <img src="./images/main/card/card02.jpg" alt="card-thumbnail">
+                                    </div>
+                                    <div class="card-content">
+                                        <span class="card-subTitle">인천시 벤처기업부</span>
+                                        <h3 class="card-title">2021년 인천 글로벌 IP 스타기업 모집공고</h3>
+                                        <ul class="card-tag">
+                                            <li class="card-kind white-style">엑셀러레이팅</li>
+                                            <li class="card-dDay blue-style">D-15</li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <a href="#">
+                                    <div class="img-wrap">
+                                        <img src="./images/main/card/card03.jpg" alt="card-thumbnail">
+                                    </div>
+                                    <div class="card-content">
+                                        <span class="card-subTitle">중소벤처기업부</span>
+                                        <h3 class="card-title">초기창업 패키지 글로벌 기술 사업화 프로그램 모집공고</h3>
+                                        <ul class="card-tag">
+                                            <li class="card-kind white-style">엑셀러레이팅</li>
+                                            <li class="card-dDay blue-style">D-15</li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="program-button-next swiper-button-next"></div>
+                <div class="program-button-prev swiper-button-prev"></div>
+            </div>
+            <div class="program-slide2 slide-inner">
+                <div class="program-swiper2 swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./images/main/visual/s-banner01.jpg" alt="banner-img">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/main/visual/s-banner01.jpg" alt="banner-img">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/main/visual/s-banner01.jpg" alt="banner-img">
+                        </div>
+                    </div>
+                    <div class="program2-pagination swiper-pagination"></div>
+                </div>
+                <span>
+                    <i></i>
+                    광고 등록 안내
+                </span>
+            </div>
+        </section>
     </main>
 
     <!-- script -->
     <script src="./js/bannerSwiper.js"></script>
+    <script src="./js/header.js"></script>
 </body>
 </html>
