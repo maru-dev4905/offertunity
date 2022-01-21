@@ -1,0 +1,66 @@
+/* banner slide */
+
+main{
+    padding-top: 90px;
+}
+.banner-slide{
+    position: relative;
+    width: 100%;
+    max-width: 1132px;
+    margin: 0 auto;
+}
+.banner-slide .banner-swiper{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    border-radius: 25px;
+    position: relative;
+}
+.banner-slide .banner-swiper img{
+    width: 100%;
+}
+.banner-button-prev.swiper-button-prev,
+.banner-button-next.swiper-button-next{
+    width: 54px;
+    height: 54px;
+    transition: 0.3s ease;
+}
+.banner-button-prev.swiper-button-prev:hover,
+.banner-button-next.swiper-button-next:hover{
+    opacity: 0.5;
+}
+.banner-button-prev.swiper-button-prev:after{
+    content: "" !important;
+    width: 54px !important;
+    height: 54px !important;
+    background: url("../images/icons/ico-slidePrevArrow.svg") no-repeat center / cover;
+}
+.banner-button-next.swiper-button-next:after{
+    content: "" !important;
+    width: 54px !important;
+    height: 54px !important;
+    background: url("../images/icons/ico-slideNextArrow.svg") no-repeat center / cover;
+}
+.banner-slide .banner-pagination{
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    z-index: 1000;
+    transform: translateX(-50%);
+    border-radius: 25px;
+    width: max-content !important;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 6px 15px;
+    font-size: 12px;
+    font-family: 600;
+    letter-spacing: 2px;
+    color: #B0B0B0;
+}
+.banner-slide .banner-pagination .swiper-pagination-current{
+    color: #fff;
+    letter-spacing: 2px;
+}
+.banner-slide .banner-pagination .swiper-pagination-total{
+    letter-spacing: 0;
+}
+/* banner slide */

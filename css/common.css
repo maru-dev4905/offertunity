@@ -1,0 +1,101 @@
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 90px;
+    z-index: 100000000;
+}
+header .inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+header .logo a{
+    display: flex;
+    align-items: center;
+}
+header .logo img{
+    width: auto;
+    height: 34px;
+}
+header .gnb{
+    height: 100%;
+}
+header .gnb ul{
+    height: 100%;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+header .gnb li a{
+    font-size: 15px;
+    font-weight: 500;
+    color: #292929;
+    transition: 0.3s ease;
+}
+header .gnb li a:hover{
+    opacity: 0.5;
+}
+
+header .header-right{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+header .login-before{
+    display: none;
+    align-items: center;
+    border-radius: 25px;
+    border: 1px solid #938BF3;
+    padding: 14px 26px;
+}
+header .login-before.active{
+    display: flex;
+}
+header .login-before a{
+    font-size: 14px;
+    font-weight: 500;
+    color: #5338DF;
+    display: flex;
+    align-items: center;
+}
+header .login-before a span{
+    font-family: 'Metropolis';
+    transition: 0.3s ease;
+}
+header .login-before a:first-child::after{
+    content: "";
+    width: 4px;
+    height: 4px;
+    background-color: #5338DF;
+    border-radius: 100%;
+    margin: 0 10px 1px;
+    display: inline-block;
+}
+header .login-before a:hover span{
+    opacity: 0.5;
+}
+
+header .login-after{
+    padding: 14px 26px;
+    border-radius: 25px;
+    background-color: #F5F3FF;
+    display: none;
+    align-items: center;
+    gap: 20px;
+}
+header .login-after.active{
+    display: flex;
+}
+header .login-after a,
+header .login-after button{
+    display: flex;
+    align-items: center;
+    transition: 0.3s ease;
+}
+header .login-after a:hover,
+header .login-after button:hover{
+    opacity: 0.5;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offertunity | Main</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- swiper.js CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="inner">
+            <h1 class="logo">
+                <a href="./index.html">
+                    <img src="./images/common/logo.svg" alt="logo">
+                </a>
+            </h1>
+            <nav class="gnb">
+                <ul>
+                    <li>
+                        <a href="#">프로그램</a>
+                    </li>
+                    <li>
+                        <a href="#">스타트업</a>
+                    </li>
+                    <li>
+                        <a href="#">파트너스</a>
+                    </li>
+                    <li>
+                        <a href="#">데모데이</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <button id="search-btn">
+                    <img src="./images/icons/ico-search.svg" alt="search-icon">
+                </button>
+                <!-- login 전에는 login-before에 active 클래스 추가 시 나옵니다. -->
+                <div class="login-before active">
+                    <a href="#"><span>Login</span></a>
+                    <a href="#"><span>Join</span></a>
+                </div>
+
+                <!-- login 후에는 login-after에 active 클래스 추가 시 나옵니다. -->
+                <div class="login-after">
+                    <button class="alarm">
+                        <img src="./images/icons/ico-alarm.svg" alt="alarm">
+                    </button>
+                    <a href="#">
+                        <img src="./images/icons/ico-profile.svg" alt="profile">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="banner-slide">
+            <div class="banner-swiper swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./images/main/visual/banner01.jpg" alt="banner-img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/main/visual/banner01.jpg" alt="banner-img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/main/visual/banner01.jpg" alt="banner-img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/main/visual/banner01.jpg" alt="banner-img">
+                    </div>
+                </div>
+                <div class="banner-pagination"></div>
+            </div>
+            <div class="banner-button-next swiper-button-next"></div>
+            <div class="banner-button-prev swiper-button-prev"></div>
+        </section>
+    </main>
+
+    <!-- script -->
+    <script src="./js/bannerSwiper.js"></script>
+</body>
+</html>
