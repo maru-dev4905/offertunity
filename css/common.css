@@ -197,6 +197,7 @@ header .login-after button:hover{
     display: block;
     margin: 14px 0;
 }
+.company-card .card-title,
 .card .card-title{
     font-size: 16px;
     font-weight: 600;
@@ -204,12 +205,12 @@ header .login-after button:hover{
     line-height: 1.5;
     margin-bottom: 14px;
 }
-.card .card-tag{
+.card-tag{
     display: flex;
     align-items: center;
     gap: 5px;
 }
-.card .card-tag li{
+.card-tag li{
     padding: 5px 13px;
     border-radius: 25px;
     display: flex;
@@ -218,17 +219,235 @@ header .login-after button:hover{
     font-size: 12px;
     font-weight: 500;
 }
-.card .white-style{
+.card-tag .white-style{
     background-color: #f4f4f4;
     color: #787878;
 }
-.card .blue-style{
+.card-tag .blue-style{
     background-color: #EAE7FB;
     color: #5F53EF;
 }
-.card .red-style{
+.card-tag .red-style{
     background-color: #FFF3F3;
     color: #FF9A9A;
 }
 
 /* card */
+
+
+
+
+/* companyCard */
+
+.company-card{
+    width: 300px;
+    border-radius: 25px;
+    border: 1px solid #eee;
+    padding: 10px;
+}
+.company-card .img-wrap{
+    width: 100%;
+    height: 140px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.company-card .img-wrap img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s ease;
+}
+.company-card:hover .img-wrap img{
+    transform: scale(1.075);
+}
+.company-card h3{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.company-card p{
+    font-size: 14px;
+    color: #596166;
+    line-height: 1.5;
+    word-break: keep-all;
+    margin-bottom: 20px;
+}
+
+/* companyCard */
+
+
+
+
+
+/* button */
+
+.more-btn{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    color: #573DDF;
+    border-radius: 25px;
+    border: 1px solid #573DDF;
+    padding: 12px 24px;
+    width: max-content;
+    margin: 46px auto 0;
+    transition: 0.3s ease;
+}
+.more-btn.downArrow i{
+    width: 12px;
+    height: 12px;
+    display: block;
+    background: url("../images/icons/ico-downPurpleArrow.svg") no-repeat center / cover;
+    transition: 0.3s ease;
+}
+
+.more-btn:hover{
+    color: #fff;
+    background-color: #573DDF;
+}
+.more-btn.downArrow:hover i{
+    background: url("../images/icons/ico-downWhiteArrow.svg") no-repeat center / cover;
+}
+
+.more-btn.rightArrow i{
+    width: 12px;
+    height: 12px;
+    display: block;
+    background: url("../images/icons/ico-rightPurpleArrow.svg") no-repeat center / cover;
+    transition: 0.3s ease;
+}
+
+.more-btn.rightArrow:hover i{
+    background: url("../images/icons/ico-rightWhiteArrow.svg") no-repeat center / cover;
+}
+
+.fill-right-btn{
+    padding: 12px 24px;
+    border-radius: 25px;
+    background-color: #573DDF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    color: #fff;
+    gap: 8px;
+    width: max-content;
+    margin: 26px auto 0;
+    transition: 0.3s ease;
+    border: 1px solid #573DDF;
+}
+.fill-right-btn i{
+    width: 12px;
+    height: 12px;
+    display: block;
+    background: url("../images/icons/ico-rightWhiteArrow.svg") no-repeat center / cover;
+    transition: 0.3s ease;
+}
+.fill-right-btn:hover{
+    color: #573DDF;
+    background-color: #fff;
+    border: 1px solid #573DDF;
+}
+.fill-right-btn:hover i{
+    background: url("../images/icons/ico-rightPurpleArrow.svg") no-repeat center / cover;
+}
+
+/* button */
+
+
+
+/* footer */
+
+footer{
+    border-top: 1px solid #e7e7e7;
+}
+footer .inner{
+    padding-top: 63px;
+    padding-bottom: 52px;
+}
+footer .footer-top{
+    display: flex;
+    justify-content: space-between;
+}
+footer .footer-top h2{
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    font-size: 52px;
+    font-family: "Metropolis";
+    font-weight: 600;
+}
+footer .fnb ul{
+    height: 100%;
+}
+footer .fnb li{
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-family: "Metropolis";
+    font-weight: 600;
+    text-align: right;
+    transition: 0.3s ease;
+}
+footer .fnb li:last-child{
+    margin-bottom: 0;
+}
+footer .fnb li:hover{
+    opacity: 0.5;
+}
+footer .snb{
+    margin-top: 24px;
+}
+footer .snb ul{
+    display: flex;
+    gap: 10px;
+}
+footer .snb li{
+    width: 37px;
+    height: 37px;
+    border-radius: 100%;
+}
+footer .snb li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #F5F5F5;
+    border-radius: 100%;
+    transition: 0.3s ease;
+}
+footer .snb li a:hover{
+    opacity: 0.5;
+}
+footer .footer-desc{
+    margin-left: auto;
+    text-align: right;
+}
+footer .footer-desc span{
+    font-size: 16px;
+    font-family: "Metropolis";
+    color: #dedede;
+    margin-bottom: 12px;
+    display: block;
+}
+footer .footer-desc li{
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #989898;
+}
+footer .footer-desc li:last-child{
+    margin-bottom: 0;
+}
+footer .copyright{
+    text-transform: lowercase;
+    font-size: 12px;
+    font-family: "Metropolis";
+    font-weight: 400;
+    color: #bbb;
+}
+
+/* footer */

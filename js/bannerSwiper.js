@@ -43,3 +43,14 @@ var programSlide2 = new Swiper(".program-swiper2", {
     // 드래그 막는 코드
     simulateTouch:false
 });
+
+var startupSlide = new Swiper(".startup-swiper", {
+    navigation: {
+        nextEl: ".startup-button-next",
+        prevEl: ".startup-button-prev",
+    },
+    slidesPerView: 3,
+    slidesPerGroup: 3,
+    loop: true,
+    speed:750,
+});

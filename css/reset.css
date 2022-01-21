@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Spoqa Han Sans Neo';
+    font-style: normal;
 }
 input,button,textarea{
     border: none;
@@ -29,6 +30,14 @@ a{
     margin: 0 auto;
 }
 
-main,body,html{
-    overflow-x: hidden;
+body{
+    position: relative;
+}
+
+.dis-block{
+    display: block !important;
+}
+
+.fc-purple{
+    color: #3F21DB;
 }
