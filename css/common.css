@@ -1,6 +1,9 @@
 main{
     padding-top: 90px;
 }
+.projectDetail .sub-header + main{
+    padding-top: 254px;
+}
 
 /* header */
 header{
@@ -209,6 +212,45 @@ header .profile-partners .profile-link li:last-child{
 }
 .sub-header + main{
     padding-top: 150px;
+}
+
+.sub-header .project-title{
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+.sub-header .right{
+    display: flex;
+    align-items: center;
+}
+.sub-header .project-dDay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #757575;
+    margin-right: 23px;
+}
+.sub-header .applying-btn{
+    width: 150px;
+    height: 40px;
+    border: 1px solid #5F53EF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    color: #fff;
+    background-color: #5F53EF;
+    transition: 0.3s ease;
+    font-weight: 600;
+    font-size: 13px;
+}
+.sub-header .applying-btn:hover{
+    background-color: #fff;
+    color: #5F53EF;
 }
 
 /* header */

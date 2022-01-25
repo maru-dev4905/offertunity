@@ -1,0 +1,214 @@
+/* project - detail */
+
+.projectDetail .project-content .inner{
+    max-width: 784px;
+}
+
+.project-content .project-title{
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 12px;
+    margin-bottom: 15px;
+}
+.project-content .client-content{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+.project-content .client-content img{
+    width: 32px;
+    height: 32px;
+}
+.project-content .client-content span{
+    font-size: 13px;
+    font-weight: 400;
+}
+.project-content .project-day{
+    font-size: 12px;
+    color: #aaa;
+}
+
+.project-img{
+    margin-top: 27px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 27px;
+}
+.project-img .project-representImg{
+    width: 600px;
+    height: 330px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.project-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.project-subImg{
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.project-subImg li{
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    overflow: hidden;
+    border-radius: 15px;
+    height: max-content;
+    position: relative;
+}
+.project-subImg li.active::before{
+    content: "";
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 15px;
+    border: 5px solid #5344FF;
+}
+.project-subImg li button{
+    width: 100%;
+    height: 100%;
+}
+
+.project-desc{
+    width: 100%;
+    padding: 36px 40px;
+    border-radius: 15px;
+    background-color: #F9FAFB;
+    margin-bottom: 72px;
+}
+.project-desc li{
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    margin-bottom: 15px;
+}
+.project-desc li:last-child{
+    margin-bottom: 0;
+}
+.project-desc li span{
+    font-size: 14px;
+    font-weight: 600;
+    color: #444;
+}
+.project-desc li p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+}
+
+.project-tab{
+    width: 100%;
+    margin-bottom: 30px;
+    position: sticky;
+    top: 150px;
+    z-index: 1000000;
+    background-color: #fff;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+.project-tab ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 38px;
+}
+.project-tab li{
+    font-size: 13px;
+    color: #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-radius: 25px;
+    transition: 0.3s ease;
+}
+.project-tab li.active{
+    background-color: #5344FF;
+}
+.project-tab li.active button{
+    color: #fff;
+}
+.project-tab li button{
+    width: 100%;
+    height: 100%;
+    padding: 0 22px;
+}
+.project-tab li:hover{
+    opacity: 0.6;
+}
+
+.project-tab-content li{
+    padding: 50px 0;
+    border-top: 2px solid #F4F4F4;
+    display: flex;
+    }
+.project-tab-content li h3{
+    font-size: 22px;
+    font-weight: 600;
+    min-width: 218px;
+}
+.project-tab-content-desc p{
+    font-size: 14px;
+    color: #666;
+    line-height: 2;
+    margin-bottom: 36px;
+}
+.project-tab-content-desc p:last-child{
+    margin-bottom: 0;
+}
+.project-tab-content-desc strong{
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 10px;
+    display: block;
+}
+.project-tab-content-desc strong + p + p{
+    margin-top: -18px;
+}
+.project-tab-content-desc em{
+    display: block;
+    padding-left: 0.8em;
+}
+.project-tab-content > ul > li:last-child{
+    border-bottom: 1px solid #F4F4F4;
+    margin-bottom: 45px;
+}
+.project-applying-btn{
+    width: 100%;
+    height: 65px;
+    border-radius: 70px;
+    background-color: #5344FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 90px;
+    transition: 0.3s ease;
+}
+.project-applying-btn:hover{
+    opacity: 0.6;
+}
+
+.recommendation-project-list{
+    background-color: #FAFBFB;
+    padding: 77px 0 100px;
+}
+.recommendation-project-list .inner > h3{
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+/* project - detail */

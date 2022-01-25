@@ -41,7 +41,20 @@ body{
 .fc-purple{
     color: #3F21DB;
 }
+.fc-red{
+    color: #D80027 !important;
+}
 
 main{
     min-height: 100vh;
+}
+
+.flex{
+    display: flex;
+}
+.spaceBetween{
+    justify-content: space-between;
+}
+.alignCenter{
+    align-items: center;
 }
