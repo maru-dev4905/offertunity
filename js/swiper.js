@@ -23,10 +23,19 @@ var programSlide = new Swiper(".program-swiper", {
         nextEl: ".program-button-next",
         prevEl: ".program-button-prev",
     },
-    slidesPerView: 3,
-    slidesPerGroup: 3,
-    loop: true,
+    slidesPerView: "auto",
+    spaceBetween:20,
     speed:750,
+    loop: false,
+    
+    breakpoints: {
+        768: {
+            spaceBetween:20,
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+            loop: true,
+        }
+    }
 });
 
 var programSlide2 = new Swiper(".program-swiper2", {
@@ -49,8 +58,37 @@ var startupSlide = new Swiper(".startup-swiper", {
         nextEl: ".startup-button-next",
         prevEl: ".startup-button-prev",
     },
-    slidesPerView: 3,
-    slidesPerGroup: 3,
-    loop: true,
+    slidesPerView: "auto",
+    spaceBetween:20,
+    loop: false,
+    speed:750,    
+
+    breakpoints: {
+        768: {
+            spaceBetween:20,
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+            loop: true,
+        }
+    }
+});
+
+var recommendationProjectSlide = new Swiper(".recommendation-project-swiper", {
+    navigation: {
+        nextEl: ".recommendation-project-button-next",
+        prevEl: ".recommendation-project-button-prev",
+    },
+    slidesPerView: "auto",
+    spaceBetween:20,
     speed:750,
+    loop: false,
+    
+    breakpoints: {
+        768: {
+            spaceBetween:20,
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+            loop: true,
+        }
+    }
 });

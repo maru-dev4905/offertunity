@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="./css/animation.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/popup.css">
 
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -43,6 +44,9 @@
 <body>
     <header>
         <div class="inner">
+            <button class="menu-open-btn">
+                <img src="./images/icons/ico-menu.svg" alt="menu-open-btn">
+            </button>
             <h1 class="logo">
                 <a href="./index.html">
                     <img src="./images/common/logo.svg" alt="logo">
@@ -51,7 +55,7 @@
             <nav class="gnb">
                 <ul>
                     <li>
-                        <a href="#">프로그램</a>
+                        <a href="./allProgram.html">프로그램</a>
                     </li>
                     <li>
                         <a href="#">스타트업</a>
@@ -70,18 +74,44 @@
                 </button>
                 <!-- login 전에는 login-before에 active 클래스 추가 시 나옵니다. -->
                 <div class="login-before active">
-                    <a href="#"><span>Login</span></a>
-                    <a href="#"><span>Join</span></a>
+                    <a href="./login.html"><span>Login</span></a>
+                    <a href="./join.html"><span>Join</span></a>
                 </div>
 
                 <!-- login 후에는 login-after에 active 클래스 추가 시 나옵니다. -->
-                <div class="login-after">
+                <div class="login-after ">
                     <button class="alarm">
                         <img src="./images/icons/ico-alarm.svg" alt="alarm">
                     </button>
-                    <a href="#">
+                    <div class="profile">
                         <img src="./images/icons/ico-profile.svg" alt="profile">
-                    </a>
+
+                        <div class="profile-partners">
+                            <div class="profile-top">
+                                <p>안녕하세요!</p>
+                                <h2>
+                                    <span>석지희</span>님
+                                </h2>
+                            </div>
+                            <ul class="profile-link">
+                                <li>
+                                    <a href="#">워크스테이션</a>
+                                </li>
+                                <li>
+                                    <a href="#">파트너 기관</a>
+                                </li>
+                                <li>
+                                    <a href="#">받은 IR자료 관리</a>
+                                </li>
+                                <li>
+                                    <a href="#">지원 프로그램 관리</a>
+                                </li>
+                                <li>
+                                    <a href="#">로그아웃</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -187,13 +217,16 @@
                 <div class="program-swiper2 swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="./images/main/visual/s-banner01.jpg" alt="banner-img">
+                            <img class="pc" src="./images/main/visual/s-banner01.jpg" alt="banner-img">
+                            <img class="mo" src="./images/main/visual/s-banner01-mo.svg" alt="banner-img">
                         </div>
                         <div class="swiper-slide">
-                            <img src="./images/main/visual/s-banner01.jpg" alt="banner-img">
+                            <img class="pc" src="./images/main/visual/s-banner01.jpg" alt="banner-img">
+                            <img class="mo" src="./images/main/visual/s-banner01-mo.svg" alt="banner-img">
                         </div>
                         <div class="swiper-slide">
-                            <img src="./images/main/visual/s-banner01.jpg" alt="banner-img">
+                            <img class="pc" src="./images/main/visual/s-banner01.jpg" alt="banner-img">
+                            <img class="mo" src="./images/main/visual/s-banner01-mo.svg" alt="banner-img">
                         </div>
                     </div>
                     <div class="program2-pagination swiper-pagination"></div>
@@ -720,9 +753,33 @@
         </div>
     </footer>
     
+    <div class="alarm-popup">
+        <div class="inner">
+            <ul>
+                <li>
+                    <a href="#">
+                        <div class="alarm-top">
+                            <div class="alarm-kind">
+                                <img src="./images/icons/ico-emailPopup.svg" alt="popup-icon">
+                                오퍼튜니티
+                            </div>
+                            <span class="alarm-time">3시간 전</span>
+                        </div>
+                        <div class="alarm-content">
+                            <p>
+                                <span>초기창업 패키지 글로벌 기술 사업화 프로그램 모집공고</span> 프로그램 신청을 완료했습니다.
+                            </p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="dim"></div>
 
     <!-- script -->
-    <script src="./js/bannerSwiper.js"></script>
+    <script src="./js/swiper.js"></script>
     <script src="./js/header.js"></script>
+    <script src="./js/popup.js"></script>
 </body>
 </html>

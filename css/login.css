@@ -1,0 +1,501 @@
+/* login */
+
+.login .sec-title{
+    padding-top: 196px;
+    padding-bottom: 42px;
+}
+.login .sec-title span{
+    color: #5F53EF;
+    font-weight: 500;
+    font-size: 16px;
+}
+.login .sec-title h2{
+    font-size: 26px;
+}
+
+.login-container{
+    width: calc(100vw - 40px);
+    max-width: 392px;
+    margin: 0 auto;
+    padding-bottom: 142px;
+}
+
+.login .col{
+    margin-bottom: 20px;
+    position: relative;
+}
+.login .col button{
+    width: 100%;
+    height: 60px;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    position: relative;
+    transition: 0.3s ease;
+}
+.login .col button:hover{
+    opacity: 0.6;
+}
+.login .col button span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 15px;
+    text-align: center;
+}
+.login .col button.kakaotalk-btn{
+    background-color: #F9E000;
+    color: #111;
+}
+.login .col button.naver-btn{
+    background-color: #5FC53A;
+    color: #fff;
+}
+.login .col button.google-btn{
+    background-color: #fff;
+    border: 1px solid #eee;
+}
+.login .col button.email-btn{
+    padding: 0 20px;
+    margin: 0 auto;
+    width: max-content;
+    height: 33px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 25px;
+    transition: 0.3s ease;
+}
+.login .col button.email-btn.active{
+    background-color: #F9FAFB;
+}
+.login .col button.email-btn span{
+    position: static;
+    transform: translate(0,0);
+}
+.login form input{
+    border: 1px solid rgb(228, 228, 228);
+    width: 100%;
+    height: 60px;
+    border-radius: 60px;
+    padding: 0 30px;
+    color: #000;
+    transition: 0.3s ease;
+    font-size: 14px;
+}
+.login form input:focus::placeholder{
+    font-size: 15.5px;
+    color: rgba(0, 0, 0, 0.6);
+}
+.login form input::placeholder{
+    color: #c7c7c7;
+    transition: 0.3s ease;
+}
+.login form input.active{
+    border: 1px solid #5F53EF;
+}
+.login form input.error{
+    border: 1px solid #FF6767;
+}
+.login form input#login-pwInput + .password-view-btn{
+    position: absolute;
+    top: 50%;
+    right: 36px;
+    transform: translateY(-50%);
+    width: max-content;
+    padding: 0;
+}
+.login form input#login-pwInput + .password-view-btn i{
+    width: 24px;
+    height: 24px;
+    background: url('../images/icons/ico-passwordView.svg') no-repeat center / cover;
+    display: block;
+    transition: 0.25s ease;
+}
+.login form input#login-pwInput + .password-view-btn.show i{
+    background: url('../images/icons/ico-passwordViewActive.svg') no-repeat center / cover;
+}
+.login #loginForm .col:nth-child(2){
+    margin-bottom: 10px;
+}
+.login #loginForm .error-text{
+    font-size: 12px;
+    color: #FF6767;
+    padding-left: 10px;
+    visibility: hidden;
+    margin-bottom: 20px;
+}
+.login #loginForm .error-text.error{
+    visibility: visible;
+}
+.login .flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+}
+.login .flex .email-checkbox{
+    display: flex;
+    gap: 5px;
+    position: relative;
+}
+.login #emailSave-checkbox{
+    width: 0;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    visibility: hidden;
+    display: none;
+}
+.login #emailSave-checkbox + span{
+    width: 17px;
+    height: 17px;
+    border-radius: 100%;
+    border: 1px solid #BCBCBC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.login #emailSave-checkbox + span i{
+    width: 8.6px;
+    height: 7px;
+    background: url("../images/icons/ico-check.svg") no-repeat center / cover;
+    display: block;
+    margin-top: 1px;
+    transition: 0.3s ease;
+}
+.login #emailSave-checkbox:checked + span{
+    border: 1px solid #000;
+}
+.login #emailSave-checkbox:checked + span i{
+    background: url("../images/icons/ico-checkActive.svg") no-repeat center / cover;
+}
+.login .email-checkbox label{
+    padding-left: 24px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+.login .login-btn{
+    background-color: #5F53EF;
+    color: #fff;
+    font-weight: 600;
+    margin: 15px 0;
+}
+.login #loginForm p:last-child{
+    text-align: center;
+    font-size: 13px;
+    color: #444;
+}
+.login #loginForm p:last-child a{
+    color: #5F53EF;
+    margin-left: 5px;
+}
+
+/* login */
+
+
+/* join */
+
+.join .join-container{
+    width: calc(100vw - 40px);
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 150px 0 240px;
+}
+.join-container ul{
+    display: flex;
+    justify-content: space-between;
+}
+.join-container li{
+    border-radius: 25px;
+    border: 1px solid #eee;
+    transition: 0.3s ease;
+    padding: 55px 0;
+    width: 362px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+.join .col{
+    margin-bottom: 20px;
+    position: relative;
+}
+.join-container li:hover{
+    border: 1px solid #5F53EF;
+}
+.join-container li img{
+    width: calc(100% - 92px);
+    margin-bottom: 32px;
+}
+.join-container li h2{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.join-container li p{
+    font-size: 15px;
+    color: #363636;
+    line-height: 1.5;
+    text-align: center;
+    word-break: keep-all;
+    font-weight: 300;
+    margin-bottom: 36px;
+}
+.join-container li a{
+    width: 154px;
+    height: 47px;
+    border-radius: 50px;
+    border: 1px solid #5F53EF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #5F53EF;
+    transition: 0.3s ease;
+}
+.join-container li a i{
+    width: 18px;
+    height: 18px;
+    display: block;
+    background: url("../images/icons/ico-rightPurpleArrow.svg") no-repeat center / cover;
+    transition: 0.3s ease;
+}
+.join-container li a:hover{
+    background-color: #5F53EF;
+    color: #fff;
+}
+.join-container li a:hover i{
+    background: url("../images/icons/ico-rightWhiteArrow.svg") no-repeat center / cover;
+}
+
+.join.startup .join-container{
+    width: calc(100vw - 40px);
+    max-width: 380px;
+    margin: 0 auto;
+    padding-bottom: 142px;
+}
+.join-title h2{
+    font-size: 31px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.join form input{
+    border: 1px solid rgb(228, 228, 228);
+    width: 100%;
+    height: 60px;
+    border-radius: 60px;
+    padding: 0 30px;
+    color: #000;
+    transition: 0.3s ease;
+    font-size: 14px;
+}
+.join form input:focus::placeholder{
+    font-size: 15.5px;
+    color: rgba(0, 0, 0, 0.6);
+}
+.join form input::placeholder{
+    color: #c7c7c7;
+    transition: 0.3s ease;
+}
+.join form .certified-btn{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 68px;
+    height: 38px;
+    border-radius: 40px;
+    background-color: #5F53EF;
+    color: #fff;
+    font-weight: 500;
+}
+.join form .numberCheck-btn{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 68px;
+    height: 38px;
+    border-radius: 40px;
+    background-color: #F2F2F2;
+    font-weight: 500;
+}
+.join form ul{
+    background-color: #F9FAFB;
+    padding: 27px 28px 24px;
+    border-radius: 25px;
+    flex-direction: column;
+    position: relative;
+}
+.join form ul li{
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    position: relative;
+    z-index: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 10px;
+    background-color: transparent;
+}
+.join form ul li:first-child{
+    margin-bottom: 17px;
+}
+.join form ul li input{
+    display: none;
+    margin: 0;
+}
+.join form ul li:first-child label{
+    font-size: 15px;
+    font-weight: 600;
+    color: #000;
+}
+.join form ul li span{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    transition: 0.3s ease;
+    position: relative;
+    z-index: -1;
+}
+.join form ul li span i{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: url("../images/icons/ico-check2.svg") no-repeat center / cover;
+    transition: 0.3s ease;
+}
+.join form ul li input:checked + span i{
+    background: url("../images/icons/ico-checkActive2.svg") no-repeat center / cover;
+}
+.join form ul li:hover{
+    border: none;
+}
+.join form ul li label {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: #777;
+    position: absolute;
+    z-index: 1;
+    padding-left: 30px;
+}
+.join form ul li label span{
+    width: max-content;
+    color: #5F53EF;
+    margin-right: 5px;
+}
+.join form button[type="submit"]{
+    width: 100%;
+    height: 60px;
+    border-radius: 60px;
+    padding: 0 30px;
+    color: #fff;
+    transition: 0.3s ease;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 26px;
+    background-color: #5F53EF;
+    transition: 0.3s ease;
+}
+.join form button[type="submit"]:hover{
+    opacity: 0.6;
+}
+.join .join-container p:last-child{
+    text-align: center;
+    font-size: 14px;
+}
+.join .join-container p:last-child a{
+    color: #5F53EF;
+    margin-left: 5px;
+}
+
+.join-success .join-container{
+    width: calc(100vw - 40px);
+    max-width: 330px;
+    margin: 0 auto;
+    padding: 173px 0;
+    text-align: center;
+}
+.join-success .join-container h2{
+    margin-bottom: 22px;
+    font-size: 31px;
+}
+.join-success .join-container p{
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 300px;
+}
+.join-success .join-container .join-success-content{
+    position: relative;
+}
+.join-success .join-container img{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 0;
+}
+.join-success .join-container a{
+    width: 213px;
+    height: 58px;
+    border-radius: 60px;
+    border: 1px solid #5F53EF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    color: #5F53EF;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 auto;
+    transition: 0.3s ease;
+}
+.join-success .join-container a i{
+    width: 18px;
+    height: 18px;
+    display: block;
+    background: url("../images/icons/ico-flagPurple.svg") no-repeat center / cover;
+    transition: 0.3s ease;
+}
+.join-success .join-container a:hover{
+    background-color: #5F53EF;
+    color: #fff;
+}
+.join-success .join-container a:hover i{
+    background: url("../images/icons/ico-flagWhite.svg") no-repeat center / cover;
+}
+
+/* join */
+
+
+/* responsive 768 */
+
+@media all and (max-width:768px){
+    .login .sec-title{
+        padding-top: 50px;
+    }
+}
+
+/* responsive 768 */

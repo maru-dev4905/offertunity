@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offertunity | startup - Join</title>
+
+
+    <!-- SEO -->
+    <meta name="description" content="스타트업의 모든것, 오퍼튜니티에서 간편하게">
+    <meta name="keywords" content="Offertunity, Startup">
+    <meta name="author" content="">
+    <meta name="robots" content="all">
+
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Offertunity">
+    <meta property="og:description" content="스타트업의 모든것, 오퍼튜니티에서 간편하게">
+    <meta property="og:image" content="">
+   
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Offertunity">
+    <meta name="twitter:url" content="">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:description" content="스타트업의 모든것, 오퍼튜니티에서 간편하게">
+   
+    
+    <!-- css -->
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/popup.css">
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- swiper.js CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+</head>
+<body class="join startup">
+    <header>
+        <div class="inner">
+            <button class="menu-open-btn">
+                <img src="./images/icons/ico-menu.svg" alt="menu-open-btn">
+            </button>
+            <h1 class="logo">
+                <a href="./index.html">
+                    <img src="./images/common/logo.svg" alt="logo">
+                </a>
+            </h1>
+            <nav class="gnb">
+                <ul>
+                    <li>
+                        <a href="#">프로그램</a>
+                    </li>
+                    <li>
+                        <a href="#">스타트업</a>
+                    </li>
+                    <li>
+                        <a href="#">파트너스</a>
+                    </li>
+                    <li>
+                        <a href="#">데모데이</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <button id="search-btn">
+                    <img src="./images/icons/ico-search.svg" alt="search-icon">
+                </button>
+                <!-- login 전에는 login-before에 active 클래스 추가 시 나옵니다. -->
+                <div class="login-before active">
+                    <a href="#"><span>Login</span></a>
+                    <a href="#"><span>Join</span></a>
+                </div>
+
+                <!-- login 후에는 login-after에 active 클래스 추가 시 나옵니다. -->
+                <div class="login-after">
+                    <button class="alarm">
+                        <img src="./images/icons/ico-alarm.svg" alt="alarm">
+                    </button>
+                    <a href="#">
+                        <img src="./images/icons/ico-profile.svg" alt="profile">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="obj-group">
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="join-container">
+            <div class="join-title">
+                <h2>스타트업 회원가입</h2>
+            </div>
+            <form action="#" method="post" id="startupJoinForm">
+                <div class="col">
+                    <input type="email" placeholder="이메일을 입력해주세요" id="emailinput">
+                    <button type="button" class="certified-btn">
+                        인증
+                    </button>
+                </div>
+                <div class="col">
+                    <input type="text" placeholder="인증번호를 입력해주세요" id="numberInput">
+                    <button type="button" class="numberCheck-btn">
+                        확인
+                    </button>
+                </div>
+                <div class="col">
+                    <input type="text" placeholder="이름을 입력해주세요" id="nameInput">
+                </div>
+                <div class="col">
+                    <input type="password" placeholder="비밀번호를 입력해주세요" id="passwordInput" autocomplete="on">
+                </div>
+                <div class="col">
+                    <input type="password" placeholder="비밀번호를 다시 입력해주세요" id="passwordInput2" autocomplete="on">
+                </div>
+                <ul class="terms-container">
+                    <li>
+                        <!-- 전체동의 버튼 클릭 시 전체 체크박스 활성화 -->
+                        <input type="checkbox" id="terms-checkbox01">
+                        <span>
+                            <i></i>
+                        </span>
+                        <label for="terms-checkbox01">모든 약관에 동의하다</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="terms-checkbox02">
+                        <span>
+                            <i></i>
+                        </span>
+                        <label for="terms-checkbox02">
+                            <span>(필수)</span>
+                            서비스 이용약관에 동의합니다.
+                        </label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="terms-checkbox03">
+                        <span>
+                            <i></i>
+                        </span>
+                        <label for="terms-checkbox03">
+                            <span>(필수)</span>
+                            개인정보 수집 및 이용에 동의합니다.
+                        </label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="terms-checkbox04">
+                        <span>
+                            <i></i>
+                        </span>
+                        <label for="terms-checkbox04">
+                            <span>(선택)</span>
+                            마케팅 정보 수신에 동의합니다.
+                        </label>
+                    </li>
+                </ul>
+                <button type="submit">
+                    <span>회원가입</span>
+                </button>
+            </form>
+            <p>
+                이미 오퍼튜니티 회원이신가요? 
+                <a href="./login.html">로그인</a>
+            </p>
+           
+        </div>
+    </main>
+    <footer>
+        <div class="inner">
+            <div class="footer-top">
+                <h2>
+                    Contact Us
+                    <img src="./images/icons/ico-rightBlackArrow.svg" alt="rightArrow">
+                </h2>
+                <nav>
+                    <ul class="fnb">
+                        <li>
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#">Terms</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <nav class="snb">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./images/icons/ico-instagram.svg" alt="instagram-icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/icons/ico-facebook.svg" alt="facebook-icon">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer-desc">
+                <span>Office</span>
+                <ul>
+                    <li>
+                        서울특별시 강남구 강남대로 327 대륭서초타워 16층
+                    </li>
+                    <li>
+                        대표이사: 백양제 조원선  사업자 번호: 654-87-01239
+                    </li>
+                    <li>
+                        mail: help@momentium.co.kr
+                    </li>
+                </ul>
+            </div>
+            <p class="copyright">
+                COPYRIGHT (c) OFFERTUNITY. ALL RIGHTS RESERVED.
+            </p>
+        </div>
+    </footer>
+
+    <div class="emailPopup">
+        <img src="./images/icons/ico-emailPopup.svg" alt="emailPopup-icon">
+        <button type="button" class="popup-close-btn">
+            <i></i>
+        </button>
+        <div class="emailPopup-content">
+            <h3>이메일 인증하기</h3>
+            <h4>jhsuk@easypress.me</h4>
+            <p>
+                입력해주신 이메일로 인증번호를 보냈습니다.
+                <br>
+                확인 후 인증번호를 입력해주세요.
+            </p>
+        </div>
+        <div class="emailPopup-btnGroup">
+            <button type="button" class="checkBtn">
+                확인
+            </button>
+            <button type="button" class="cancleBtn">
+                취소
+            </button>
+        </div>
+
+    </div>
+    <div class="dim"></div>
+
+    <!-- script -->
+    <script src="./js/header.js"></script>
+    <script src="./js/popup.js"></script>
+    <script src="./js/termsCheck.js"></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+/* popup */
+
+.dim{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000000000;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.25);
+    transition: 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+.dim.show{
+    opacity: 1;
+    visibility: visible;
+}
+
+.emailPopup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: calc(100vw - 40px);
+    max-width: 520px;
+    background-color: #fff;
+    z-index: 1000000000000;
+    border-radius: 35px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+}
+.emailPopup.show{
+    opacity: 1;
+    visibility: visible;
+}
+.emailPopup > img{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -27px;
+}
+.emailPopup .emailPopup-btnGroup{
+    display: flex;
+}
+.emailPopup .emailPopup-btnGroup button{
+    width: 50%;
+    height: 57px;
+    transition: 0.3s ease;
+}
+.emailPopup .emailPopup-btnGroup button:hover{
+    opacity: 0.7;
+}
+.emailPopup .checkBtn{
+    background-color: #5F53EF;
+    border-radius: 0 0 0 35px;
+    color: #fff;
+}
+.emailPopup .cancleBtn{
+    background-color: #F2F2F2;
+    border-radius: 0 0 35px 0;
+    color: #5F53EF;
+}
+.emailPopup .popup-close-btn{
+    position: absolute;
+    right: 12px;
+    top: 12px;
+}
+.emailPopup .popup-close-btn i{
+    width: 24px;
+    height: 24px;
+    display: block;
+    background: url("../images/icons/ico-close.svg") no-repeat center / cover;
+}
+.emailPopup .emailPopup-content{
+    padding: 50px 0 70px;
+    text-align: center;
+}
+.emailPopup .emailPopup-content h3{
+    font-size: 19px;
+    color: #5F53EF;
+    margin-bottom: 34px;
+}
+.emailPopup .emailPopup-content h4{
+    font-size: 20px;
+    color: #000;
+    font-weight: 400;
+    margin-bottom: 34px;
+    font-family: "Metropolis";
+}
+.emailPopup .emailPopup-content p{
+    font-size: 14px;
+    font-weight: 300;
+    color: #000;
+    line-height: 2.8;
+}
+
+
+
+.alarm-popup{
+    position: fixed;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10000000000000;
+    opacity: 0;
+    visibility: hidden;
+    width: 100vw;
+}
+.alarm-popup.show{
+    opacity: 1;
+    visibility: visible;
+}
+.alarm-popup .inner{
+    display: flex;
+    justify-content: flex-end;
+}
+.alarm-popup li{
+    width: 437px;
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 0 25px;
+    margin-bottom: 15px;
+}
+.alarm-popup .alarm-top{
+    padding-top: 30px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.alarm-popup .alarm-top .alarm-time{
+    font-size: 11px;
+    color: #5F53EF;
+}
+.alarm-popup .alarm-top .alarm-kind{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    position: relative;
+    width: max-content;
+}
+.alarm-popup .alarm-top .alarm-kind::after{
+    content: "";
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    right: -7px;
+    top: -0px;
+    border-radius: 100%;
+    background-color: #5F53EF;
+}
+.alarm-popup .alarm-top .alarm-kind img{
+    width: 20px;
+    height: auto;
+    margin-right: 5px;
+    transform: translateY(1px);
+}
+.alarm-popup .alarm-content{
+    padding-top: 14px;
+    padding-bottom: 30px;
+    font-size: 12px;
+    font-weight: 400;
+}
+.alarm-popup .alarm-content span{
+    color: #5F53EF;
+}
+
+/* popup */
