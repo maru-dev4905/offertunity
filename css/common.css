@@ -519,6 +519,33 @@ header .profile-partners .profile-link li:last-child{
     align-items: center;
     color: #fff;
 }
+.newslatter form{
+    display: flex;
+}
+.newslatter .col:first-child{
+    width: 175px;
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+    padding: 0;
+}
+.newslatter .col:first-child.active{
+    width: 175px;
+    opacity: 1;
+    visibility: visible;
+    padding: 0 20px;
+}
+.newslatter .col:first-child input{
+    width: 100%;
+}
+.newslatter .col:last-child{
+    width: 306px;
+    margin-left: 0;
+    transition: 0.3s ease;
+}
+.newslatter .col:last-child.active{
+    margin-left: 13px;
+}
 .newslatter .col{
     display: flex;
     justify-content: space-between;

@@ -72,10 +72,24 @@
 .login .col button.email-btn.active{
     background-color: #F9FAFB;
 }
+.login .col button.email-btn.active img{
+    transform: rotate(180deg);
+}
+.login .col button.email-btn img{
+    transition: 0.3s ease;
+}
 .login .col button.email-btn span{
     position: static;
     transform: translate(0,0);
 }
+#loginForm{
+    display: none;
+    transition: 0.3s ease;
+}
+#loginForm.active{
+    display: block;
+}
+
 .login form input{
     border: 1px solid rgb(228, 228, 228);
     width: 100%;

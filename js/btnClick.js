@@ -23,3 +23,7 @@ $(".bookmark-btn").click(function(){
         th.addClass("active");
     }
 });
+
+$(".newslatter #newslatterEmailInput").focus(function(){
+    
+});
