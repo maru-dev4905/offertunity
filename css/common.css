@@ -422,6 +422,8 @@ header .profile-partners .profile-link li:last-child{
     padding-bottom: 28px;
     display: flex;
     justify-content: space-between;
+    position: relative;
+    z-index: 1;
 }
 .filter-container .right{
     display: flex;
@@ -678,6 +680,7 @@ header .profile-partners .profile-link li:last-child{
     border-radius: 25px;
     border: 1px solid #eee;
     padding: 10px;
+    position: relative;
 }
 .company-card .img-wrap{
     width: 100%;
@@ -685,6 +688,7 @@ header .profile-partners .profile-link li:last-child{
     border-radius: 15px;
     overflow: hidden;
     margin-bottom: 20px;
+    position: relative;
 }
 .company-card .img-wrap img{
     width: 100%;
@@ -707,6 +711,30 @@ header .profile-partners .profile-link li:last-child{
     line-height: 1.5;
     word-break: keep-all;
     margin-bottom: 20px;
+}
+.company-card .bookmark-btn{
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    z-index: 10000;
+}
+.company-card .bookmark-btn img{
+    display: block;
+}
+.company-card .bookmark-btn img + img{
+    display: none;
+}
+.company-card .bookmark-btn.active img{
+    display: none;
+}
+.company-card .bookmark-btn.active img + img{
+    display: block;
+}
+.company-card .share-btn{
+    position: absolute;
+    top: 18px;
+    right: 46px;
+    z-index: 100000;
 }
 
 /* companyCard */
