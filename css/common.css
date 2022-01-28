@@ -471,6 +471,16 @@ header.header-style2 .header-right a.home-link{
     max-width: 794px;
     margin: 0 auto;
 }
+.inner.inner-960{
+    width: calc(100vw - 100px);
+    max-width: 960px;
+    margin: 0 auto;
+}
+.inner.inner-1173{
+    width: calc(100vw - 100px);
+    max-width: 1173px;
+    margin: 0 auto;
+}
 
 /* section / layout */
 
@@ -768,6 +778,14 @@ header.header-style2 .header-right a.home-link{
 .card-tag .red-style{
     background-color: #FFF3F3;
     color: #FF9A9A;
+}
+.card-tag .yellow-style{
+    background-color: #FFF4D9;
+    color: #FFD15C;
+}
+.card-tag .green-style{
+    background-color: #EDFFD7;
+    color: #55BD53;
 }
 
 /* card */

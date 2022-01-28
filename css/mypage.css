@@ -1,0 +1,263 @@
+/* mypage */
+
+.mypage .inner > h2{
+    margin-top: 70px;
+    margin-bottom: 28px;
+}
+.mypage-content1{
+    width: 100%;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.mypage-content1 .left > span{
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+    font-weight: 400;
+}
+.mypage-content1 .left h3{
+    font-size: 27px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.mypage-content1 .left h3 span{
+    font-weight: 600;
+}
+.mypage-content1 .left li{
+    display: flex;
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.mypage-content1 .left li:last-child{
+    margin-bottom: 0;
+}
+.mypage-content1 .left li span{
+    color: #868686;
+    min-width: 180px;
+}
+.mypage-content1 .right button{
+    margin-bottom: 10px;
+    width: 144px;
+    height: 45px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 500;
+    gap: 5px;
+}
+.mypage-content1 .right button:first-child{
+    border: 1px solid #5F53EF;
+    color: #5F53EF;
+}
+.mypage-content1 .right button:last-child{
+    margin-bottom: 0;
+    background-color: #5F53EF;
+    color: #fff;
+}
+
+.mypage-content2{
+    width: 100%;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+.mypage-content2 h3{
+    font-size: 16px;
+    margin-bottom: 164px;
+}
+.mypage-content2 ul{
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.mypage-content2 .current-bar{
+    height: 2px;
+    background-color: #5F53EF;
+    position: absolute;
+    z-index: 0;
+    left: 7.5%;
+    top: 9px;
+}
+.mypage-content2 ul::before{
+    content: "";
+    width: 83%;
+    border-top: 2px dashed #BEBEBE;
+    position: absolute;
+    left: 50%;
+    top: 9px;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+.mypage-content2 li{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.mypage-content2 li::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url("../images/icons/ico-check3.svg") no-repeat center / cover;
+}
+.mypage-content2 li.active::before{
+    background: url("../images/icons/ico-check3Active.svg") no-repeat center / cover;
+}
+.mypage-content2 li:first-of-type:after{
+    content: "";
+    width: 44px;
+    height: 44px;
+    display: block;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url("../images/sub/mypage/light.svg") no-repeat center / cover;
+}
+.mypage-content2 li span{
+    font-size: 12px;
+    color: #bebebe;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    display: block;
+}
+.mypage-content2 li p{
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.mypage-content2 li em{
+    font-size: 12px;
+    color: #5F53EF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 25px;
+    background-color: #E5E1FF;
+    border-radius: 30px;
+    display: none;
+}
+.mypage-content2 li.active em{
+    display: flex;
+}
+.mypage-content2 ul .current-img{
+    position: absolute;
+    width: 86px;
+    height: 140px;
+    background: url("../images/sub/mypage/character01.png") no-repeat center / cover;
+    top: calc(-100% - 25px);
+}
+.mypage-content2 .current-percent{
+    position: absolute;
+    font-size: 16px;
+    font-weight: 700;
+    color: #5F53EF;
+    top: calc(-100% - 40px);
+    font-family: 'Metropolis';
+}
+
+.mypage-content3{
+    width: 100%;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+.mypage-content3 h3{
+    font-size: 16px;
+}
+.mypage-content3 .col{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 26px;
+}
+.mypage-content3 > ul > li{
+    position: relative;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+.mypage-content3 > ul > li:last-child{
+    border: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.mypage-content3 .col a{
+    font-size: 13px;
+    color: #573DDF;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.mypage-content3 span{
+    font-size: 13px;
+    color: #999;
+    margin-bottom: 6px;
+    display: block;
+}
+.mypage-content3 h4{
+    font-size: 15px;
+    margin-bottom: 17px;
+}
+.mypage-content3 .bookmark-btn{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+.mypage-content3 .bookmark-btn img{display: block;}
+.mypage-content3 .bookmark-btn img + img{display: none;}
+.mypage-content3 .bookmark-btn.active img{display: none;}
+.mypage-content3 .bookmark-btn.active img + img{display: block;}
+
+.mypage-content4,
+.mypage-content5,
+.mypage-content6{
+    width: 100%;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+.mypage-content6{
+    margin-bottom: 110px;
+}
+.mypage-content4 h3,
+.mypage-content5 h3,
+.mypage-content6 h3{
+    font-size: 16px;
+    margin-bottom: 23px;
+}
+.mypage-content4 > ul,
+.mypage-content5 > ul,
+.mypage-content6 > ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+}
+.mypage-content4 > ul > li,
+.mypage-content5 > ul > li,
+.mypage-content6 > ul > li{
+    flex: 1;
+}
+.mypage-content4 li .company-card,
+.mypage-content5 li .company-card,
+.mypage-content6 li .card{
+    width: 100%;
+}
+
+/* mypage */

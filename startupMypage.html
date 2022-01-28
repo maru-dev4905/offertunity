@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offertunity | startup list</title>
+
+
+    <!-- SEO -->
+    <meta name="description" content="스타트업의 모든것, 오퍼튜니티에서 간편하게">
+    <meta name="keywords" content="Offertunity, Startup">
+    <meta name="author" content="">
+    <meta name="robots" content="all">
+
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Offertunity">
+    <meta property="og:description" content="스타트업의 모든것, 오퍼튜니티에서 간편하게">
+    <meta property="og:image" content="">
+   
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Offertunity">
+    <meta name="twitter:url" content="">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:description" content="스타트업의 모든것, 오퍼튜니티에서 간편하게">
+   
+    
+    <!-- css -->
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/popup.css">
+    <link rel="stylesheet" href="./css/mypage.css">
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- swiper.js CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+</head>
+<body class="gray-bg mypage">
+    <header>
+        <div class="inner">
+            <button class="menu-open-btn">
+                <img src="./images/icons/ico-menu.svg" alt="menu-open-btn">
+            </button>
+            <h1 class="logo">
+                <a href="./index.html">
+                    <img src="./images/common/logo.svg" alt="logo">
+                </a>
+            </h1>
+            <nav class="gnb">
+                <ul>
+                    <li>
+                        <a href="./allProgram.html">프로그램</a>
+                    </li>
+                    <li>
+                        <a href="./startupList.html">스타트업</a>
+                    </li>
+                    <li>
+                        <a href="#">파트너스</a>
+                    </li>
+                    <li>
+                        <a href="#">데모데이</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <button id="search-btn">
+                    <img src="./images/icons/ico-search.svg" alt="search-icon">
+                </button>
+                <!-- login 전에는 login-before에 active 클래스 추가 시 나옵니다. -->
+                <div class="login-before active">
+                    <a href="./login.html"><span>Login</span></a>
+                    <a href="./join.html"><span>Join</span></a>
+                </div>
+
+                <!-- login 후에는 login-after에 active 클래스 추가 시 나옵니다. -->
+                <div class="login-after ">
+                    <button class="alarm">
+                        <img src="./images/icons/ico-alarm.svg" alt="alarm">
+                    </button>
+                    <div class="profile">
+                        <img src="./images/icons/ico-profile.svg" alt="profile">
+
+                        <div class="profile-partners">
+                            <div class="profile-top">
+                                <p>안녕하세요!</p>
+                                <h2>
+                                    <span>석지희</span>님
+                                </h2>
+                            </div>
+                            <ul class="profile-link">
+                                <li>
+                                    <a href="#">워크스테이션</a>
+                                </li>
+                                <li>
+                                    <a href="#">파트너 기관</a>
+                                </li>
+                                <li>
+                                    <a href="#">받은 IR자료 관리</a>
+                                </li>
+                                <li>
+                                    <a href="#">지원 프로그램 관리</a>
+                                </li>
+                                <li>
+                                    <a href="#">로그아웃</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="inner inner-960">
+            <h2>
+                My Page
+            </h2>
+            <div class="mypage-content1">
+                <div class="left">
+                    <span class="fc-purple">
+                        스타트업 회원
+                    </span>
+                    <h3>
+                        <span>석지희</span>님 안녕하세요!
+                    </h3>
+                    <ul>
+                        <li>
+                            <span>Email</span>
+                            <p>jhsuk@easypress.me</p>
+                        </li>
+                        <li>
+                            <span>phone number</span>
+                            <p>010-1234-5678</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <button class="setting-btn">
+                        <img src="./images/icons/ico-setting.svg" alt="setting-icon">
+                        내 정보 수정
+                    </button>
+                    <button class="work-btn">
+                        <img src="./images/icons/ico-build.svg" alt="setting-icon">
+                        워크스테이션
+                    </button>
+                </div>
+            </div>
+            <div class="mypage-content2">
+                <h3>마이 스타트업 등록 진행률</h3>
+                <ul>
+                    <div class="current-percent" style="left: 55%;">65%</div>
+                    <div class="current-img" style="left: 50%;"></div>
+                    <div class="current-bar" style="width: 50%;"></div>
+                    <li class="active">
+                        <span>Step 01.</span>
+                        <p>회원가입</p>
+                        <em>complete</em>
+                    </li>
+                    <li class="active">
+                        <span>Step 02.</span>
+                        <p>사업계획서 등록</p>
+                        <em>complete</em>
+                    </li>
+                    <li class="active">
+                        <span>Step 03.</span>
+                        <p>휴대전화 인증</p>
+                        <em>complete</em>
+                    </li>
+                    <li class="active">
+                        <span>Step 04.</span>
+                        <p>스타트업 기본정보 등록</p>
+                        <em>complete</em>
+                    </li>
+                    <li>
+                        <span>Step 05.</span>
+                        <p>IR자료 등록</p>
+                        <em>complete</em>
+                    </li>
+                    <li>
+                        <span>Step 06.</span>
+                        <p>기타서류 등록</p>
+                        <em>complete</em>
+                    </li>
+                </ul>
+            </div>
+            <div class="mypage-content3">
+                <div class="col">
+                    <h3>관심있는 지원사업</h3>
+                    <a href="#">
+                        총 12개 전체보기
+                        <img src="./images/icons/ico-rightPurpleArrow.svg" alt="rightArrow">
+                    </a>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span>중소벤처기업부</span>
+                            <h4>초기창업 패키지 글로벌 기술 사업화 프로그램 모집공고</h4>
+                            <ul class="card-tag">
+                                <li class="white-style">엑셀러레이팅</li>
+                                <li class="blue-style">D-15</li>
+                                <li class="red-style">예비창업자</li>
+                                <li class="yellow-style">공간지원</li>
+                            </ul>
+                        </a>
+                        <button class="bookmark-btn">
+                            <img src="./images/icons/ico-bookmarkGray.svg" alt="bookmark-icon">
+                            <img src="./images/icons/ico-bookmarkActive.svg" alt="bookmark-icon">
+                        </button>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>중소벤처기업부</span>
+                            <h4>초기창업 패키지 글로벌 기술 사업화 프로그램 모집공고</h4>
+                            <ul class="card-tag">
+                                <li class="white-style">엑셀러레이팅</li>
+                                <li class="blue-style">D-15</li>
+                                <li class="red-style">예비창업자</li>
+                                <li class="yellow-style">공간지원</li>
+                            </ul>
+                        </a>
+                        <button class="bookmark-btn">
+                            <img src="./images/icons/ico-bookmarkGray.svg" alt="bookmark-icon">
+                            <img src="./images/icons/ico-bookmarkActive.svg" alt="bookmark-icon">
+                        </button>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>중소벤처기업부</span>
+                            <h4>초기창업 패키지 글로벌 기술 사업화 프로그램 모집공고</h4>
+                            <ul class="card-tag">
+                                <li class="white-style">엑셀러레이팅</li>
+                                <li class="blue-style">D-15</li>
+                                <li class="red-style">예비창업자</li>
+                                <li class="yellow-style">공간지원</li>
+                            </ul>
+                        </a>
+                        <button class="bookmark-btn">
+                            <img src="./images/icons/ico-bookmarkGray.svg" alt="bookmark-icon">
+                            <img src="./images/icons/ico-bookmarkActive.svg" alt="bookmark-icon">
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="mypage-content4">
+                <h3>관심있는 스타트업</h3>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <div class="company-card">
+                                <a href="#">
+                                    <div class="img-wrap">
+                                        <img src="./images/main/card/companyCard01.jpg" alt="card-thumbnail">
+                                    </div>
+                                    <div class="card-content">
+                                        <h3 class="card-title">
+                                            당근마켓
+                                            <img src="./images/main/company/companyLogo01.png" alt="company-logo">
+                                        </h3>
+                                        <p class="card-desc">
+                                            동네에서 중고 직거래 할 수 있는 지역 기반 중고거래 스마트폰 애플리케이션 서비스. 이전의 중고거래 플랫폼 중고나                                            
+                                        </p>
+                                        <ul class="card-tag">
+                                            <li class="blue-style">홈리빙</li>
+                                            <li class="white-style">지원</li>
+                                            <li class="white-style">모바일앱</li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="company-card">
+                                <a href="#">
+                                    <div class="img-wrap">
+                                        <img src="./images/main/card/companyCard01.jpg" alt="card-thumbnail">
+                                    </div>
+                                    <div class="card-content">
+                                        <h3 class="card-title">
+                                            당근마켓
+                                            <img src="./images/main/company/companyLogo01.png" alt="company-logo">
+                                        </h3>
+                                        <p class="card-desc">
+                                            동네에서 중고 직거래 할 수 있는 지역 기반 중고거래 스마트폰 애플리케이션 서비스. 이전의 중고거래 플랫폼 중고나                                            
+                                        </p>
+                                        <ul class="card-tag">
+                                            <li class="blue-style">홈리빙</li>
+                                            <li class="white-style">지원</li>
+                                            <li class="white-style">모바일앱</li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="company-card">
+                                <a href="#">
+                                    <div class="img-wrap">
+                                        <img src="./images/main/card/companyCard01.jpg" alt="card-thumbnail">
+                                    </div>
+                                    <div class="card-content">
+                                        <h3 class="card-title">
+                                            당근마켓
+                                            <img src="./images/main/company/companyLogo01.png" alt="company-logo">
+                                        </h3>
+                                        <p class="card-desc">
+                                            동네에서 중고 직거래 할 수 있는 지역 기반 중고거래 스마트폰 애플리케이션 서비스. 이전의 중고거래 플랫폼 중고나                                            
+                                        </p>
+                                        <ul class="card-tag">
+                                            <li class="blue-style">홈리빙</li>
+                                            <li class="white-style">지원</li>
+                                            <li class="white-style">모바일앱</li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mypage-content5">
+                <h3>관심있는 파트너즈</h3>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <div class="company-card">
+                                <a href="#">
+                                    <div class="img-wrap">
+                                        <img src="./images/main/card/companyCard01.jpg" alt="card-thumbnail">
+                                    </div>
+                                    <div class="card-content">
+                                        <h3 class="card-title">
+                                            당근마켓
+                                            <img src="./images/main/company/companyLogo01.png" alt="company-logo">
+                                        </h3>
+                                        <p class="card-desc">
+                                            동네에서 중고 직거래 할 수 있는 지역 기반 중고거래 스마트폰 애플리케이션 서비스. 이전의 중고거래 플랫폼 중고나                                            
+                                        </p>
+                                        <ul class="card-tag">
+                                            <li class="blue-style">홈리빙</li>
+                                            <li class="white-style">지원</li>
+                                            <li class="white-style">모바일앱</li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="company-card">
+                                <a href="#">
+                                    <div class="img-wrap">
+                                        <img src="./images/main/card/companyCard01.jpg" alt="card-thumbnail">
+                                    </div>
+                                    <div class="card-content">
+                                        <h3 class="card-title">
+                                            당근마켓
+                                            <img src="./images/main/company/companyLogo01.png" alt="company-logo">
+                                        </h3>
+                                        <p class="card-desc">
+                                            동네에서 중고 직거래 할 수 있는 지역 기반 중고거래 스마트폰 애플리케이션 서비스. 이전의 중고거래 플랫폼 중고나                                            
+                                        </p>
+                                        <ul class="card-tag">
+                                            <li class="blue-style">홈리빙</li>
+                                            <li class="white-style">지원</li>
+                                            <li class="white-style">모바일앱</li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="company-card">
+                                <a href="#">
+                                    <div class="img-wrap">
+                                        <img src="./images/main/card/companyCard01.jpg" alt="card-thumbnail">
+                                    </div>
+                                    <div class="card-content">
+                                        <h3 class="card-title">
+                                            당근마켓
+                                            <img src="./images/main/company/companyLogo01.png" alt="company-logo">
+                                        </h3>
+                                        <p class="card-desc">
+                                            동네에서 중고 직거래 할 수 있는 지역 기반 중고거래 스마트폰 애플리케이션 서비스. 이전의 중고거래 플랫폼 중고나                                            
+                                        </p>
+                                        <ul class="card-tag">
+                                            <li class="blue-style">홈리빙</li>
+                                            <li class="white-style">지원</li>
+                                            <li class="white-style">모바일앱</li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mypage-content6">
+                <h3>관심있는 데모데이</h3>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <div class="card">
+                                <a href="#">
+                                    <div class="img-wrap">
+                                        <img src="./images/main/card/card01.jpg" alt="card-thumbnail">
+                                    </div>
+                                    <div class="card-content">
+                                        <span class="card-subTitle">이지프레스</span>
+                                        <h3 class="card-title">푸시마케팅 대시보드 릴로 사업 설명회</h3>
+                                        <ul class="card-tag">
+                                            <li class=" blue-style">NEW</li>
+                                            <li class="yellow-style">온라인</li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="card">
+                                <a href="#">
+                                    <div class="img-wrap">
+                                        <img src="./images/main/card/card01.jpg" alt="card-thumbnail">
+                                    </div>
+                                    <div class="card-content">
+                                        <span class="card-subTitle">이지프레스</span>
+                                        <h3 class="card-title">B.IR PITCHING LOUNGE</h3>
+                                        <ul class="card-tag">
+                                            <li class=" blue-style">NEW</li>
+                                            <li class="green-style">온라인</li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="card">
+                                <a href="#">
+                                    <div class="img-wrap">
+                                        <img src="./images/main/card/card01.jpg" alt="card-thumbnail">
+                                    </div>
+                                    <div class="card-content">
+                                        <span class="card-subTitle">이지프레스</span>
+                                        <h3 class="card-title">푸시마케팅 대시보드 릴로 사업 설명회</h3>
+                                        <ul class="card-tag">
+                                            <li class=" blue-style">NEW</li>
+                                            <li class="yellow-style">온라인</li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="inner">
+            <div class="footer-top">
+                <h2>
+                    Contact Us
+                    <img src="./images/icons/ico-rightBlackArrow.svg" alt="rightArrow">
+                </h2>
+                <nav>
+                    <ul class="fnb">
+                        <li>
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#">Terms</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <nav class="snb">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./images/icons/ico-instagram.svg" alt="instagram-icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/icons/ico-facebook.svg" alt="facebook-icon">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer-desc">
+                <span>Office</span>
+                <ul>
+                    <li>
+                        서울특별시 강남구 강남대로 327 대륭서초타워 16층
+                    </li>
+                    <li>
+                        대표이사: 백양제 조원선  사업자 번호: 654-87-01239
+                    </li>
+                    <li>
+                        mail: help@momentium.co.kr
+                    </li>
+                </ul>
+            </div>
+            <p class="copyright">
+                COPYRIGHT (c) OFFERTUNITY. ALL RIGHTS RESERVED.
+            </p>
+        </div>
+    </footer>
+    
+    <div class="alarm-popup">
+        <div class="inner">
+            <ul>
+                <li>
+                    <a href="#">
+                        <div class="alarm-top">
+                            <div class="alarm-kind">
+                                <img src="./images/icons/ico-emailPopup.svg" alt="popup-icon">
+                                오퍼튜니티
+                            </div>
+                            <span class="alarm-time">3시간 전</span>
+                        </div>
+                        <div class="alarm-content">
+                            <p>
+                                <span>초기창업 패키지 글로벌 기술 사업화 프로그램 모집공고</span> 프로그램 신청을 완료했습니다.
+                            </p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="dim"></div>
+
+    <!-- script -->
+    <script src="./js/swiper.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/popup.js"></script>
+    <script src="./js/btnClick.js"></script>
+</body>
+</html>
