@@ -92,3 +92,13 @@ var recommendationProjectSlide = new Swiper(".recommendation-project-swiper", {
         }
     }
 });
+
+var companyTeamSlide = new Swiper(".team-slide", {
+    navigation: {
+        nextEl: ".team-img-next-btn",
+        prevEl: ".team-img-prev-btn",
+    },
+    slidesPerView: "auto",
+    spaceBetween: 20,
+    speed:750,
+})

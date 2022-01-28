@@ -12,3 +12,4 @@ $(".project-tab-btn").click(function(){
         behavior: "smooth"
     });
 });
+

@@ -14,7 +14,7 @@ $(window).scroll(function(){
         }
     }
 
-    if(stickyCheck){
+    if(stickyCheck == "projectSticky"){
         if(
             $(".project-tab-content li").eq(0).offset().top
             - $("header").innerHeight()
@@ -48,6 +48,47 @@ $(window).scroll(function(){
             $(".project-tab li").removeClass("active");
             $(".project-tab li").eq(2).addClass("active");
         }
+    }else if(stickyCheck == "companySticky"){
+        if(
+            $(".company-content2").offset().top
+            - $("header").innerHeight()
+            - $(".project-tab").innerHeight()
+            <= 
+            $(window).scrollTop()
+        ){
+            $(".project-tab li").removeClass("active");
+            $(".project-tab li").eq(0).addClass("active");
+        }
+        if(
+            $(".company-content3").offset().top
+            - $("header").innerHeight()
+            - $(".project-tab").innerHeight()
+            <= 
+            $(window).scrollTop()
+        ){
+            $(".project-tab li").removeClass("active");
+            $(".project-tab li").eq(1).addClass("active");
+        }
+        if(
+            $(".company-content4").offset().top
+            - $("header").innerHeight()
+            - $(".project-tab").innerHeight()
+            <= 
+            $(window).scrollTop()
+        ){
+            $(".project-tab li").removeClass("active");
+            $(".project-tab li").eq(2).addClass("active");
+        }
+        if(
+            $(".company-content5").offset().top
+            - $("header").innerHeight()
+            - $(".project-tab").innerHeight()
+            <= 
+            $(window).scrollTop()
+        ){
+            $(".project-tab li").removeClass("active");
+            $(".project-tab li").eq(3).addClass("active");
+        }
     }else{
         return false;
     }
@@ -56,8 +97,10 @@ $(window).scroll(function(){
 var stickyCheck;
 
 if($("body.projectDetail").length == 1){
-    stickyCheck = true;
+    stickyCheck = "projectSticky";
     console.log(stickyCheck);
+}else if($("body.startupSingle").length == 1){
+    stickyCheck = "companySticky";
 }else{
     stickyCheck = false;
 }

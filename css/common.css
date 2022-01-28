@@ -466,8 +466,45 @@ header.header-style2 .header-right a.home-link{
     max-width: 540px;
     margin: 0 auto;
 }
+.inner.inner-794{
+    width: calc(100vw - 100px);
+    max-width: 794px;
+    margin: 0 auto;
+}
 
 /* section / layout */
+
+
+
+/* pagePath */
+
+.page-path{
+    margin-top: 62px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.page-path li{
+    font-size: 12px;
+    font-weight: 500;
+    color: #989898;
+}
+.page-path li::after{
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: url("../images/icons/ico-paginationRightGrayArrow.svg") no-repeat center / cover;
+    display: inline-block;
+    margin: 0 9px;
+}
+.page-path li:last-child::after{
+    display: none;
+}
+.page-path li a.active{
+    color: #5F53EF;
+}
+
+/* pagePath */
 
 
 

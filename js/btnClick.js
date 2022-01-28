@@ -13,6 +13,20 @@ $(".project-tab-btn").click(function(){
     });
 });
 
+$(".company-tab-btn").click(function(){
+    var th = $(this);
+    var thIndex = th.parent().index();
+
+    window.scrollTo({
+        top: $(`.company-content${thIndex + 2}`).offset().top
+            - $("header").innerHeight()
+            - $(".project-tab").innerHeight()
+            + 10
+        ,
+        behavior: "smooth"
+    });
+});
+
 
 $(".bookmark-btn").click(function(){
     var th = $(this);
