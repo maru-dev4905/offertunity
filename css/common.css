@@ -253,6 +253,38 @@ header .profile-partners .profile-link li:last-child{
     color: #5F53EF;
 }
 
+header.header-style2{
+    background-color: #F9FAFB;
+}
+header.header-style2 .inner{
+    max-width: calc(100vw - 100px);
+}
+header.header-style2 .header-right a{
+    font-size: 13px;
+    font-family: 'Spoqa Han Sans Neo';
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+header.header-style2 .header-right a:hover{
+    opacity: 0.8;
+}
+header.header-style2 .header-right a.home-link{
+    width: 142px;
+    height: 45px;
+    border-radius: 50px;
+    background-color: #5F53EF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    color: #fff;
+    font-family: 'Spoqa Han Sans Neo';
+    font-weight: 500;
+}
+
 /* header */
 
 /* slide */
@@ -417,7 +449,6 @@ header .profile-partners .profile-link li:last-child{
     padding-top: 48px;
 }
 
-
 .filter-container{
     padding-bottom: 28px;
     display: flex;
@@ -428,6 +459,12 @@ header .profile-partners .profile-link li:last-child{
 .filter-container .right{
     display: flex;
     gap: 12px;
+}
+
+.inner.inner-540{
+    width: calc(100vw - 100px);
+    max-width: 540px;
+    margin: 0 auto;
 }
 
 /* section / layout */
@@ -539,11 +576,12 @@ header .profile-partners .profile-link li:last-child{
     width: 100%;
 }
 .newslatter .col:last-child{
-    width: 306px;
+    width: 495px;
     margin-left: 0;
     transition: 0.3s ease;
 }
 .newslatter .col:last-child.active{
+    width: 306px;
     margin-left: 13px;
 }
 .newslatter .col{
@@ -884,6 +922,18 @@ header .profile-partners .profile-link li:last-child{
 footer{
     border-top: 1px solid #e7e7e7;
     background-color: #fff;
+}
+footer.footer-style2{
+    border-top: none;
+    background: transparent;
+    padding: 95px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #bbb;
+    font-weight: 300;
+    font-family: 'Metropolis';
 }
 footer .inner{
     padding-top: 63px;

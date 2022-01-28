@@ -58,3 +58,7 @@ main{
 .alignCenter{
     align-items: center;
 }
+
+.gray-bg{
+    background-color: #F9FAFB;
+}
