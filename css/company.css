@@ -562,5 +562,27 @@
     margin-bottom: -5px;
     color: #fff;
 }
+.startupWorkstation .program-section{
+    width: 100%;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 40px;
+    margin-top: 20px;
+}
+.startupWorkstation .program-section h3{
+    font-size: 22px;
+    margin-bottom: 26px;
+}
+.startupWorkstation .program-section a{
+    font-size: 13px;
+    color: #5344FF;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.program-list{
+    display: flex;
+    gap: 25px;
+}
 
 /* company - startupWorkstation */
