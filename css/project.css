@@ -226,6 +226,26 @@
     margin-top: 72px;
     margin-bottom: 28px;
 }
+.back-link + .link-group{
+    margin-top: 72px;
+    margin-bottom: 28px;
+    display: flex;
+    align-items: center;
+}
+.back-link + .link-group a{
+    width: 120px;
+    height: 38px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 600;
+}
+.back-link + .link-group a.active{
+    background-color: #5344FF;
+    color: #fff;
+}
 .company-content{
     border-radius: 30px;
     background-color: #fff;
@@ -375,3 +395,24 @@
 
 /* project - signup */
 
+
+/* project - request support project */
+
+.reqProgramList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+.reqProgramList > li{
+    width: 300px;
+}
+.reqProgramList > li .card2{
+    background-color: #fff;
+}
+.reqProgramList > li .card2 p{
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+
+/* project - request support project */

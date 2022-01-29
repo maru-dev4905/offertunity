@@ -586,3 +586,475 @@
 }
 
 /* company - startupWorkstation */
+
+
+
+/* company - myStartupModify */
+
+#myStartupModifyForm{
+    background-color: #fff;
+    border-radius: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+#myStartupModifyForm h3{
+    font-size: 22px;
+    font-weight: 600;
+}
+#myStartupModifyForm h4{
+    font-size: 18px;
+    margin-bottom: 14px;
+}
+#myStartupModifyForm .col{
+    position: relative;
+    width: calc(100% - 80px);
+    margin: 0 auto 56px;
+}
+#myStartupModifyForm .col:first-child{
+    margin-bottom: 40px;
+}
+#myStartupModifyForm .col:last-child{
+    margin-bottom: 0;
+}
+#myStartupModifyForm input{
+    padding: 0 22px;
+    height: 55px;
+    border-radius: 60px;
+    border: 1px solid #eee;
+    width: 100%;
+}
+#myStartupModifyForm textarea{
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%;
+    min-height: 188px;
+    max-height: 188px;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    padding: 20px 22px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+    letter-spacing: -0.25px;
+}
+#myStartupModifyForm textarea.h-55{
+    min-height: 55px;
+    max-height: 55px;
+}
+#myStartupModifyForm textarea.h-130{
+    min-height: 130px;
+    max-height: 130px;
+}
+#myStartupModifyForm textarea + label{
+    position: absolute;
+    font-size: 12px;
+    color: #dbdbdb;
+    right: 15px;
+    bottom: 15px;
+}
+#myStartupModifyForm li,
+#myStartupModifyForm .fileInput-wrap{
+    position: relative;
+    margin-bottom: 15px;
+}
+#myStartupModifyForm .upload-name{
+    display: inline-flex;
+    align-items: center;
+    height: 55px;
+    border-radius: 60px;
+    padding: 0 25px;
+    padding-right: 50px;
+    vertical-align: middle;
+    border: 1px solid #E9E9E9;
+    width: 100%;
+    color: #BCBCBC;
+    font-size: 14px;
+    font-weight: 400;
+}
+#myStartupModifyForm .upload-name + label{
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 68px;
+    height: 38px;
+    border-radius: 40px;
+    background-color: #5344FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+#myStartupModifyForm input[type="file"] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+}
+#myStartupModifyForm input[type="file"] + span{
+    position: absolute;
+    right: 96px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: #bcbcbc;
+    font-weight: 400;
+}
+#myStartupModifyForm .btn-group{
+    display: flex;
+    height: 63px;
+}
+#myStartupModifyForm .btn-group button{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+#myStartupModifyForm .btn-group button:hover{
+    opacity: 0.8;
+}
+#myStartupModifyForm .btn-group button.save-btn{
+    width: 35%;
+    background-color: #F4F4F4;
+    color: #5F53EF;
+}
+#myStartupModifyForm .btn-group button.signup-btn{
+    width: 65%;
+    background-color: #5F53EF;
+    color: #fff;
+}
+#myStartupModifyForm .select-cont{
+    width: 100%;
+}
+#myStartupModifyForm .select-current{
+    z-index: 100;
+    height: 55px;
+    border: 1px solid #eee;
+}
+#myStartupModifyForm .select-list{
+    z-index: 55;
+    padding-top: 55px;
+    border-radius: 28px;
+}
+#myStartupModifyForm .select-list button{
+    padding: 10px;
+}
+#myStartupModifyForm .team-list > li{
+    padding: 40px 0;
+    border-bottom: 1px solid #eee;
+}
+#myStartupModifyForm .team-list > li:last-child{
+    border-bottom: none;
+}
+#myStartupModifyForm .flex:nth-child(1){
+    margin-bottom: 15px;
+}
+#myStartupModifyForm .team-list span{
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+}
+#myStartupModifyForm .remove-btn{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+#myStartupModifyForm .team-list #teamNameInput,
+#myStartupModifyForm .team-list #teamJobInput{
+    width: 128px;
+}
+#myStartupModifyForm .team-list .fileInput-wrap{
+    width: 184px;
+}
+#myStartupModifyForm .team-list .fileRemoveBtn{
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    opacity: 0.4;
+    display: none;
+}
+#myStartupModifyForm .team-list .fileRemoveBtn.active{
+    display: block;
+}
+#myStartupModifyForm .team-list .fileRemoveBtn img{
+    width: 100%;
+    height: 100%;
+}
+#myStartupModifyForm .team-list + .team-add-btn,
+#myStartupModifyForm .history-list + .history-add-btn,
+#myStartupModifyForm .news-add-btn{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    color: #5344FF;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+#myStartupModifyForm .news-add-btn{
+    margin-top: 40px;
+}
+#myStartupModifyForm .textarea-wrap{
+    position: relative;
+}
+
+#myStartupModifyForm .history-list > li{
+    border-bottom: 1px solid #eee;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+#myStartupModifyForm .history-list > li:first-child{
+    padding-top: 0;
+}
+#myStartupModifyForm .history-list > li:last-child{
+    border-bottom: none;
+}
+#myStartupModifyForm .history-list .flex:nth-child(2) ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+#myStartupModifyForm .history-list .flex:nth-child(2) li{
+    width: 145px;
+}
+#myStartupModifyForm .history-list .flex:nth-child(2) input,
+#myStartupModifyForm .history-list .flex:nth-child(2) .select-current{
+    border: 1px solid #5344FF;
+}
+#myStartupModifyForm .history-list .flex:nth-child(2) .select-cont{
+    z-index: 10000;
+}
+#myStartupModifyForm .history-list .flex:nth-child(2) li:first-child em{
+    z-index: 100000;
+}
+#myStartupModifyForm .history-list .flex:nth-child(2) em{
+    background-color: #fff;
+    position: absolute;
+    z-index: 1000;
+    padding: 5px 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #5344FF;
+    font-size: 14px;
+    top: -15px;
+    display: block;
+}
+#myStartupModifyForm + .save-btn{
+    width: 160px;
+    height: 48px;
+    border-radius: 50px;
+    background-color: #5344FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    margin: 40px auto 0;
+    transition: 0.3s ease;
+}
+#myStartupModifyForm + .save-btn:hover{
+    opacity: 0.7;
+}
+
+/* company - myStartupModify */
+
+
+
+
+/* company - get IR */
+
+.getIR .col{
+    border-radius: 20px;
+    padding: 40px;
+    background-color: #fff;
+}
+.getIR .col .view-select{
+    width: 136px;
+}
+.IR-list .IR-list-top{
+    background-color: #F6F6F9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.IR-list .IR-list-top li{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+.IR-list .IR-list-body > li{
+    border-bottom: 1px solid #eee;
+    padding: 22px 0;
+}
+.IR-list .IR-list-body > li ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.IR-list .IR-list-body > li ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #6E6B7B;
+    flex: 1;
+}
+.IR-list .IR-list-body > li ul li.fc-purple{
+    color: #5344FF;
+    text-decoration: underline;
+}
+
+
+/* company - get IR */
+
+
+
+/* company - application form inquiry */
+
+.startup-content{
+    border-radius: 40px;
+    background-color: #fff;
+    padding-top: 40px;
+}
+.startup-content h3{
+    width: calc(100% - 80px);
+    margin: 40px auto 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.startup-content h3:first-child{
+    margin-top: 0;
+}
+.startup-content p{
+    width: calc(100% - 80px);
+    margin: 0 auto;
+    font-size: 14px;
+    color: #777;
+    line-height: 1.7;
+}
+
+.startup-desc-list{
+    border-radius: 15px;
+    border: 1px solid #e9e9e9;
+    overflow: hidden;
+    width: calc(100% - 80px);
+    margin: 0 auto;
+}
+.startup-desc-list li{
+    display: flex;
+}
+.startup-desc-list li:last-child .desc-title,
+.startup-desc-list li:last-child .desc-content{
+    border-bottom: none;
+}
+.startup-desc-list .desc-title{
+    padding: 13px 0;
+    background-color: #7569FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+    border-bottom: 1px solid #E9E9E9;
+}
+.startup-desc-list .desc-content{
+    width: calc(100% - 170px);
+    padding: 13px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    color: #000;
+    font-weight: 500;
+    border-bottom: 1px solid #E9E9E9;
+}
+.startup-content a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 80px);
+    height: 55px;
+    margin: 0 auto 15px;
+    border-radius: 60px;
+    border: 1px solid #e9e9e9;
+    padding: 0 25px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.startup-content a:last-child{
+    margin-bottom: 0;
+}
+.person-content{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    width: calc(100% - 80px);
+    height: 55px;
+    border-radius: 60px;
+    border: 1px solid #e9e9e9;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+.person-content li{
+    display: flex;
+    align-items: center;
+}
+.person-content li:after{
+    content: "";
+    width: 1px;
+    height: 14px;
+    background-color: #eee;
+    margin: 0 15px;
+    display: inline-block;
+}
+.person-content + .btn-group{
+    display: flex;
+    border-radius: 0 0 40px 40px;
+    overflow: hidden;
+    margin-top: 40px;
+}
+.person-content + .btn-group button{
+    height: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    width: 65%;
+    background-color: #5F53EF;
+    color: #fff;
+}
+.person-content + .btn-group button:first-child{
+    width: 35%;
+    background-color: #F4F4F4;
+    color: #5F53EF;
+}
+
+/* company - application form inquiry */
