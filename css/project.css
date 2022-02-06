@@ -416,3 +416,150 @@
 }
 
 /* project - request support project */
+
+
+
+@media all and (max-width:920px){
+    .projectDetail .project-content .inner{
+        max-width: calc(100% - 250px);
+    }
+    .project-img .project-representImg{
+        width: 100%;
+    }
+    .suportProjectSingle .sub-header{
+        display: none;
+    }
+    .suportProjectSingle header.mo{
+        border-bottom: 1px solid #eee;
+    }
+    .projectDetail .sub-header + main{
+        padding-top: 100px;
+    }
+    .project-tab{
+        top: 60px;
+    }
+    .project-img{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .project-subImg{
+        width: 100%;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .project-subImg li{
+        height: 100%;
+    }
+    .project-subImg{
+        height: 74px;
+    }
+
+    .supportProjectSignup main .inner{
+        padding-top: 30px;
+    }
+    .company-content .col{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
+
+
+@media all and (max-width: 768px){
+    .back-link{
+        display: none;
+    }
+    .reqProgramList{
+        padding-top: 24px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+    .reqProgramList > li{
+        width: 100%;
+    }
+    .projectDetail .project-content .inner{
+        max-width: calc(100% - 40px);
+    }
+    .project-subImg{
+        gap: 10px;
+    }
+    .project-img .project-representImg{
+        height: 220px;
+    }
+    .project-desc{
+        padding: 20px;
+    }
+    .project-desc li{
+        align-items: flex-start;
+    }
+    .project-desc li span{
+        min-width: 17.5%;
+    }
+    .project-tab-content li{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .project-tab-content li h3 br{
+        display: none;
+    }
+
+    .inner.inner-540{
+        width: calc(100% - 40px);
+    }
+    #projectSignupForm .col{
+        width: calc(100% - 40px);
+        margin-bottom: 40px;
+    }
+
+
+    .project-content .project-title{
+        font-size: 17px;
+    }
+    .project-tab{
+        margin-bottom: 10px;
+    }
+    .project-tab-content li h3{
+        font-size: 16px;
+    }
+    .project-tab-content li p{
+        line-height: 1.75;
+    }
+    .project-applying-btn{
+        height: 45px;
+        font-size: 14px;
+    }
+    .project-applying-btn img{
+        width: 17px;
+    }
+    .recommendation-project-list .grid.pc{
+        display: none !important;
+    }
+    .recommendation-project-list .recommendation-project-slide.mo{
+        display: block !important;
+    }
+    .recommendation-project-list .inner > h3{
+        font-size: 16px;
+        text-align: left;
+        margin-bottom: 18px;
+    }
+
+    .company-content h3{
+        font-size: 13px;
+    }
+    .company-content{
+        padding: 20px;
+    }
+    #projectSignupForm h4{
+        font-size: 14px;
+    }
+    #projectSignupForm{
+        padding-top: 20pxs;
+    }
+    #projectSignupForm .btn-group{
+        height: 45px;
+    }
+    #projectSignupForm .btn-group button{
+        font-size: 13px;
+    }
+}

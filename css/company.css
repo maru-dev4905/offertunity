@@ -5,6 +5,8 @@
     overflow: hidden;
     position: relative;
     margin-bottom: 36px;
+    display: flex;
+    flex-direction: column;
 }
 .company-content > img{
     height: 178px;
@@ -115,13 +117,18 @@
     border-radius: 20px;
     position: relative;
     background-color: #fff;
-    padding: 40px;
+    padding: 40px 0;
     margin-bottom: 20px;
 }
 .company-content2 h4{
     font-size: 18px;
     color: #191919;
-    margin-bottom: 30px;
+    margin: 0 auto 30px;
+    width: calc(100% - 80px);
+}
+.company-content2 .company-intro{
+    width: calc(100% - 80px);
+    margin: 0 auto;
 }
 .company-content2 .company-intro ul{
     display: flex;
@@ -153,9 +160,13 @@
     font-size: 14px;
 }
 
+.company-content2 .company-team{
+}
 .company-content2 .company-team ul.company-team-list{
+    width: calc(100% - 80px);
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto;
 }
 .company-content2 .company-team .company-team-list li{
     width: 50%;
@@ -180,7 +191,7 @@
     font-weight: 300;
 }
 .company-content2 .more-btn{
-    width: 100%;
+    width: calc(100% - 80px);
     height: 50px;
     border: none;
     border-top: 1px solid #f4f4f4;
@@ -192,16 +203,22 @@
     font-size: 13px;
     color: #5344FF;
     border-radius: 0;
-    margin-top: 0;
-    margin-bottom: 24px;
+    margin: 0 auto 24px;
 }
 .company-content2 .more-btn:hover{
     background: none;
     opacity: 0.5;
 }
+.company-team-img-wrap{
+    padding: 0 40px !important;
+}
 .company-content2 .company-team-img{
     position: relative;
     display: flex;
+}
+.company-content2 .company-team-img li:first-child{
+}
+.company-content2 .company-team-img li:last-child{
 }
 .company-content2 .company-team-img-wrap::before{
     content: "";
@@ -223,9 +240,16 @@
     right: -80px;
     bottom: 107px;
 }
+.company-content2 button.team-img-prev-btn,
+.company-content2 button.team-img-next-btn{
+    opacity: 0.3;
+    transition: 0.3s ease;
+}
+.company-content2 button:hover{
+    opacity: 1;
+}
 .company-team-img-wrap{
     position: relative;
-    /* width: calc(100% + 40px); */
 }
 .company-team-img-wrap li{
     width: 248px;
@@ -265,6 +289,7 @@
     justify-content: center;
     padding: 15px 0;
     font-size: 14px;
+    text-align: center;
 }
 .company-content3 .table-content .table-header{
     background-color: #5F53EF;
@@ -309,7 +334,7 @@
 .company-content4 .news p{
     display: block;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 400;
     margin-bottom: 12px;
     color: #777;
     line-height: 1.5;
@@ -584,6 +609,9 @@
     display: flex;
     gap: 25px;
 }
+.startupWorkstation .workstationSlide.mo{
+    display: none;
+}
 
 /* company - startupWorkstation */
 
@@ -833,9 +861,18 @@
 #myStartupModifyForm .history-list .flex:nth-child(2) li{
     width: 145px;
 }
+#myStartupModifyForm .history-list .flex:nth-child(2) li.active input,
+#myStartupModifyForm .history-list .flex:nth-child(2) li.active .select-current{
+    border: 1px solid #5344FF;
+}
+#myStartupModifyForm .history-list .flex:nth-child(2) li.active em{
+    opacity: 1;
+    visibility: visible;
+}
 #myStartupModifyForm .history-list .flex:nth-child(2) input,
 #myStartupModifyForm .history-list .flex:nth-child(2) .select-current{
-    border: 1px solid #5344FF;
+    border: 1px solid #eee;
+    transition: 0.3s ease;
 }
 #myStartupModifyForm .history-list .flex:nth-child(2) .select-cont{
     z-index: 10000;
@@ -854,6 +891,9 @@
     font-size: 14px;
     top: -15px;
     display: block;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
 }
 #myStartupModifyForm + .save-btn{
     width: 160px;
@@ -896,6 +936,10 @@
     height: 44px;
     margin: 0 auto;
     border-radius: 10px;
+}
+
+.IR-list .IR-list-top li.mo{
+    display: none;
 }
 .IR-list .IR-list-top li{
     flex: 1;
@@ -1058,3 +1102,405 @@
 }
 
 /* company - application form inquiry */
+
+
+
+@media all and (max-width:768px){
+    
+
+    .company-content2 button.team-img-prev-btn, .company-content2 button.team-img-next-btn{
+        display: none;
+    }
+    .project-tab li{
+        flex: 1;
+    }
+    .project-tab li button{
+        padding: 0;
+    }
+    .startup-content{
+        padding-top: 20px;
+    }
+    .startup-desc-list{
+        width: calc(100% - 40px);
+    }
+    .startup-desc-list .desc-content span{
+        border-radius: 0;
+        width: 100%;
+        text-align: center;
+        border: none;
+    }
+
+    .getIR header.mo{
+        border-bottom: 1px solid #eee;
+    }
+    .getIR header.scroll{
+        box-shadow: none;
+    }
+    .getIR .back-link + .link-group{
+        margin-top: 0;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        z-index: 10000000000000000000000000;
+        width: 100vw;
+        height: 60px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .getIR .back-link + .link-group a{
+        width: calc(50% - 20px);
+    }
+    .getIR .col{
+        margin-top: 88px;
+        background-color: transparent;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .IR-list .IR-list-top{
+        background-color: #fff;
+        border-radius: 10px;
+    }
+    .IR-list .IR-list-top li.pc{
+        display: none;
+    }
+    .IR-list .IR-list-top li.mo{
+        display: flex;
+        flex: 2;
+    }
+    .IR-list .IR-list-top li:last-child{
+        display: none;
+    }
+    .getIR .col .view-select{
+        width: 100%;
+    }
+    .IR-list .IR-list-body > li ul li{
+        text-align: center;
+    }
+    .IR-list .IR-list-body > li ul{
+        position: relative;
+    }
+    .IR-list .IR-list-body > li ul li:first-child{
+        flex: 2;
+        text-align: left;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-bottom: 20px;
+    }
+    .IR-list .IR-list-body > li ul li:last-child{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    .company-content{
+        margin-top: 20px;
+    }
+    .project-tab{
+        top: 60px;
+    }
+
+
+    .startupWorkstation .col h2{
+        padding-top: 0;
+        font-size: 23px;
+    }
+    .startupWorkstation .col{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .startupWorkstation .col img{
+        width: 300px;
+        position: absolute;
+        top: 70px;
+    }
+    .startupWorkstation .col-3.pc{
+        /* display: none; */
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-points-x: repeat(300px);
+        scroll-snap-type: mandatory;
+    }
+    .startupWorkstation .program-section{
+        overflow-x: hidden;
+        padding: 20px;
+    }
+    .startupWorkstation .col-3{
+        margin-top: 100px;
+    }
+    .startupWorkstation .col-3 .content{
+        flex: auto;
+        width: 290px;
+        min-width: 290px;
+        height: 328px;
+        padding: 20px;
+    }
+    .startupWorkstation .col-3 .content .profile > img{
+        width: 88px;
+        height: 88px;
+    }
+    .startupWorkstation .col-3 .content .profile button{
+        width: 130px;
+        height: 35px;
+    }
+    .startupWorkstation .col-3 .content .profile button img{
+        width: 18px;
+        height: 18px;
+    }
+    .startupWorkstation .col-3 .content:nth-child(2) > span{
+        font-size: 16px;
+    }
+    .startupWorkstation .col-3 .content:nth-child(2) a{
+        padding: 30px 0;
+    }
+    .startupWorkstation .col-3 .content:nth-child(2) h3 span{
+        font-size: 42px;
+    }
+    .startupWorkstation .col-3 .content:nth-child(2) h3{
+        font-size: 16px;
+    }
+    .startupWorkstation .col-3 .content:nth-child(2) p{
+        font-size: 14px;
+    }
+    .startupWorkstation .col-3 .content:nth-child(2) p > img:first-child{
+        width: 20px;
+    }
+    .startupWorkstation .col-3 .content:nth-child(3) span{
+        margin-top: 0;
+    }
+    #stateChart{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .startupWorkstation .col-3 .content:nth-child(3) ul{
+        top: auto;
+        bottom: 45px;
+    }
+    .startupWorkstation .col-3 .content:nth-child(3) ul li{
+        font-size: 15px;
+    }
+    .startupWorkstation .col-3 .content:nth-child(3) ul span{
+        top: -20px;
+        font-size: 10px;
+    }
+    .startupWorkstation .col-3 .content:nth-child(3) em{
+        top: 114px;
+        padding-left: 3.5px;
+    }
+    .startupWorkstation .program-section li{
+        width: 100%;
+        background-color: #fff;
+    }
+    .startupWorkstation .program-section a{
+        padding-bottom: 26px;
+    }
+    .startupWorkstation .program-section{
+        background-color: transparent;
+    }
+    .program-list{
+        flex-wrap: wrap;
+    }
+
+    #myStartupModifyForm{
+        margin-top: 20px;
+        padding-top: 20px;
+        margin-bottom: 0;
+        border-radius: 30px 30px 0 0;
+    }
+    #myStartupModifyForm .col{
+        width: calc(100% - 40px);
+        margin-bottom: 20px;
+    }
+    #myStartupModifyForm h3{
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    #myStartupModifyForm h4{
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    #myStartupModifyForm input{
+        height: 45px;
+    }
+    #myStartupModifyForm .select-current{
+        width: 100%;
+        height: 45px;
+    }
+    #myStartupModifyForm .team-list > li .flex{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+    #myStartupModifyForm .upload-name{
+        height: 45px;
+        padding-right: 85px;
+    }
+    #myStartupModifyForm .team-list .fileInput-wrap{
+        margin: 0;
+    }
+    #myStartupModifyForm .upload-name + label{
+        height: 32px;
+    }
+    #myStartupModifyForm .team-list #teamNameInput, 
+    #myStartupModifyForm .team-list #teamJobInput{
+        flex: 1;
+    }
+    #myStartupModifyForm .team-list + .team-add-btn, 
+    #myStartupModifyForm .history-list + .history-add-btn, 
+    #myStartupModifyForm .news-add-btn{
+        font-size: 14px;
+    }
+    #myStartupModifyForm + .save-btn{
+        margin-top: 0;
+        width: 100%;
+        border-radius: 0 0 25px 25px;
+    }
+
+    .startup-content h3,
+    .startup-content p,
+    .startup-content a,
+    .person-content{
+        width: calc(100% - 40px);
+    }
+}
+
+@media all and (max-width:500px){
+    .company-content2 .company-intro li{
+        width: 100%;
+    }
+    .company-content2,
+    .company-content3,
+    .company-content4{
+        padding: 20px;
+    }
+    .company-content2 .company-team .company-team-list li{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .company-content3 .table-content li{
+        font-size: 12px;
+        text-align: center;
+        word-break: keep-all;
+        padding: 15px 20px;
+    }
+    .company-content3 .table-content{
+        width: max-content;
+    }
+    .company-content3 .table-content:last-child .table-header,
+    .company-content3 .table-content:last-child .table-body{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .company-content3 .table-content .table-header,
+    .company-content3 .table-content .table-body{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+
+    }
+    .company-content3{
+        overflow-x: scroll;
+    }
+
+    .company-content4 .news strong{
+        font-size: 13px;
+    }
+    .company-content4 .news p{
+        font-size: 13px;
+        font-weight: 300;
+    }
+    .company-content5 ul{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .company-content5 li{
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    .company-content5 li:last-child{
+        margin-bottom: 0;
+    }
+    .company-content5 li::after{
+        display: none;
+    }
+    .company-content5 li img{
+        width: 14px;
+        margin-right: 6px;
+    }
+    .company-content5 li h5{
+        margin: 0;
+        font-size: 13px;
+        min-width: 85px;
+        text-align: left;
+    }
+    .company-content5 li span{
+        font-size: 12px;
+    }
+
+    .startup-desc-list .desc-title{
+        width: 102px;
+        font-size: 13px;
+    }
+    .startup-desc-list .desc-content{
+        font-size: 13px;
+        width: calc(100% - 102px);
+        padding: 13px 10px;
+    }
+    .person-content{
+        height: max-content;
+        flex-wrap: wrap;
+        padding: 15px 20px;
+    }
+    .person-content li{
+        margin: 2.5px 0;
+    }
+    .person-content li:after{
+        margin: 0 10px;
+    }
+
+    .company-content .company-desc .company-icon{
+        width: 100px;
+        height: 100px;
+        top: -50px;
+    }
+    .company-content .company-desc h3{
+        font-size: 16px;
+    }
+    .company-content .company-desc p{
+        font-size: 13px;
+        word-break: keep-all;
+        line-height: 1.5;
+    }
+    .project-tab{
+        margin-bottom: 10px;
+    }
+    .company-content2 .company-intro{
+        width: 100%;
+    }
+    .company-content2 .company-team ul.company-team-list{
+        width: 100%;
+    }
+    .company-content2 h4{
+        margin-left: 0;
+        font-size: 14px;
+    }
+    .company-content2 .company-intro li strong{
+        font-size: 13px;
+    }
+    .company-content2 .company-intro li::before{
+        margin-right: 10px;
+    }
+    .company-content2 .company-intro li span{
+        font-size: 13px;
+    }
+    .company-content2 .more-btn{
+        width: 100%;
+    }
+    .company-team-img-wrap{
+        padding: 0 !important;
+    }
+}

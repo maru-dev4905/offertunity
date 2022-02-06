@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"">
     <title>Offertunity | startup list</title>
 
 
@@ -41,7 +41,7 @@
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 </head>
 <body>
-    <header>
+    <header class="pc">
         <div class="inner">
             <button class="menu-open-btn">
                 <img src="./images/icons/ico-menu.svg" alt="menu-open-btn">
@@ -115,6 +115,14 @@
             </div>
         </div>
     </header>
+    <header class="mo">
+        <div class="inner">
+            <a href="#">
+                <img src="./images/icons/ico-leftBlackArrow.svg" alt="black arrow">
+            </a>
+            <span>스타트업</span>
+        </div>
+    </header>
     <div class="sub-header">
         <div class="inner">
             <ul>
@@ -156,13 +164,17 @@
                 </li>
             </ul>
         </div>
+        <button class="right-btn">
+            <img src="./images/icons/ico-rightArrow.svg" alt="right arrow">
+        </button>
     </div>
 
     <main>
         <div class="gray-banner">
             <div class="inner">
                 <h2>
-                    인기 있는 스타트업을 만나보세요 <img src="./images/icons/ico-emoticonFire.svg" alt="emoticon-fire">
+                    인기 있는 스타트업을 만나보세요 
+                    <object data="./images/icons/ico-emoticonFire.svg" type="image/svg+xml"></object>
                 </h2>
             </div>
             <div class="recommendation-project-slide slide-inner">
@@ -179,7 +191,7 @@
                                 </button>
                                 <a href="#">
                                     <div class="img-wrap">
-                                        <img src="./images/main/card/companyCard01.jpg" alt="card-thumbnail">
+                                        <img src="./images/main/card/companyCard01.png" alt="card-thumbnail">
                                     </div>
                                     <div class="card-content">
                                         <h3 class="card-title">
@@ -202,7 +214,7 @@
                             <div class="company-card">
                                 <a href="#">
                                     <div class="img-wrap">
-                                        <img src="./images/main/card/companyCard01.jpg" alt="card-thumbnail">
+                                        <img src="./images/main/card/companyCard01.png" alt="card-thumbnail">
                                     </div>
                                     <div class="card-content">
                                         <h3 class="card-title">
@@ -225,7 +237,7 @@
                             <div class="company-card">
                                 <a href="#">
                                     <div class="img-wrap">
-                                        <img src="./images/main/card/companyCard01.jpg" alt="card-thumbnail">
+                                        <img src="./images/main/card/companyCard01.png" alt="card-thumbnail">
                                     </div>
                                     <div class="card-content">
                                         <h3 class="card-title">
@@ -298,7 +310,7 @@
                             </button>
                             <a href="./startupSingle.html">
                                 <div class="img-wrap">
-                                    <img src="./images/main/card/companyCard02.jpg" alt="card-thumbnail">
+                                    <img src="./images/main/card/companyCard02.png" alt="card-thumbnail">
                                 </div>
                                 <div class="card-content">
                                     <h3 class="card-title">
@@ -328,7 +340,7 @@
                             </button>
                             <a href="#">
                                 <div class="img-wrap">
-                                    <img src="./images/main/card/companyCard01.jpg" alt="card-thumbnail">
+                                    <img src="./images/main/card/companyCard01.png" alt="card-thumbnail">
                                 </div>
                                 <div class="card-content">
                                     <h3 class="card-title">
@@ -358,7 +370,7 @@
                             </button>
                             <a href="#">
                                 <div class="img-wrap">
-                                    <img src="./images/main/card/companyCard01.jpg" alt="card-thumbnail">
+                                    <img src="./images/main/card/companyCard01.png" alt="card-thumbnail">
                                 </div>
                                 <div class="card-content">
                                     <h3 class="card-title">
@@ -388,7 +400,7 @@
                             </button>
                             <a href="#">
                                 <div class="img-wrap">
-                                    <img src="./images/main/card/companyCard01.jpg" alt="card-thumbnail">
+                                    <img src="./images/main/card/companyCard01.png" alt="card-thumbnail">
                                 </div>
                                 <div class="card-content">
                                     <h3 class="card-title">
@@ -418,7 +430,7 @@
                             </button>
                             <a href="#">
                                 <div class="img-wrap">
-                                    <img src="./images/main/card/companyCard01.jpg" alt="card-thumbnail">
+                                    <img src="./images/main/card/companyCard01.png" alt="card-thumbnail">
                                 </div>
                                 <div class="card-content">
                                     <h3 class="card-title">
@@ -448,7 +460,62 @@
                             </button>
                             <a href="#">
                                 <div class="img-wrap">
-                                    <img src="./images/main/card/companyCard01.jpg" alt="card-thumbnail">
+                                    <img src="./images/main/card/companyCard01.png" alt="card-thumbnail">
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="card-title">
+                                        당근마켓
+                                        <img src="./images/main/company/companyLogo01.png" alt="company-logo">
+                                    </h3>
+                                    <p class="card-desc">
+                                        동네에서 중고 직거래 할 수 있는 지역 기반 중고거래 스마트폰 애플리케이션 서비스. 이전의 중고거래 플랫폼 중고나                                            
+                                    </p>
+                                    <ul class="card-tag">
+                                        <li class="blue-style">홈리빙</li>
+                                        <li class="white-style">지원</li>
+                                        <li class="white-style">모바일앱</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="full-grid">
+                        <div class="event-slide slide-inner">
+                            <div class="event-swiper swiper">
+                                <div class="swiper-wrapper">
+                                    <a href="#" class="swiper-slide">
+                                        <img class="pc" src="./images/main/visual/s-banner01.png" alt="banner-img">
+                                        <img class="mo" src="./images/main/visual/s-banner01-mo.png" alt="banner-img">
+                                    </a>
+                                    <a href="#" class="swiper-slide">
+                                        <img class="pc" src="./images/main/visual/s-banner01.png" alt="banner-img">
+                                        <img class="mo" src="./images/main/visual/s-banner01-mo.png" alt="banner-img">
+                                    </a>
+                                    <a href="#" class="swiper-slide">
+                                        <img class="pc" src="./images/main/visual/s-banner01.png" alt="banner-img">
+                                        <img class="mo" src="./images/main/visual/s-banner01-mo.png" alt="banner-img">
+                                    </a>
+                                </div>
+                                <div class="event-pagination swiper-pagination"></div>
+                            </div>
+                            <span>
+                                <i></i>
+                                광고 등록 안내
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="company-card">
+                            <button class="bookmark-btn">
+                                <img src="./images/icons/ico-bookmark.svg" alt="bookmark-icon">
+                                <img src="./images/icons/ico-bookmarkActive.svg" alt="bookmark-icon">
+                            </button>
+                            <button class="share-btn">
+                                <img src="./images/icons/ico-share.svg" alt="share-icon">
+                            </button>
+                            <a href="#">
+                                <div class="img-wrap">
+                                    <img src="./images/main/card/companyCard01.png" alt="card-thumbnail">
                                 </div>
                                 <div class="card-content">
                                     <h3 class="card-title">
@@ -478,7 +545,7 @@
                             </button>
                             <a href="#">
                                 <div class="img-wrap">
-                                    <img src="./images/main/card/companyCard01.jpg" alt="card-thumbnail">
+                                    <img src="./images/main/card/companyCard01.png" alt="card-thumbnail">
                                 </div>
                                 <div class="card-content">
                                     <h3 class="card-title">
@@ -508,7 +575,7 @@
                             </button>
                             <a href="#">
                                 <div class="img-wrap">
-                                    <img src="./images/main/card/companyCard01.jpg" alt="card-thumbnail">
+                                    <img src="./images/main/card/companyCard01.png" alt="card-thumbnail">
                                 </div>
                                 <div class="card-content">
                                     <h3 class="card-title">
@@ -538,7 +605,7 @@
                             </button>
                             <a href="#">
                                 <div class="img-wrap">
-                                    <img src="./images/main/card/companyCard01.jpg" alt="card-thumbnail">
+                                    <img src="./images/main/card/companyCard01.png" alt="card-thumbnail">
                                 </div>
                                 <div class="card-content">
                                     <h3 class="card-title">
@@ -568,7 +635,7 @@
                             </button>
                             <a href="#">
                                 <div class="img-wrap">
-                                    <img src="./images/main/card/companyCard01.jpg" alt="card-thumbnail">
+                                    <img src="./images/main/card/companyCard01.png" alt="card-thumbnail">
                                 </div>
                                 <div class="card-content">
                                     <h3 class="card-title">
@@ -598,37 +665,7 @@
                             </button>
                             <a href="#">
                                 <div class="img-wrap">
-                                    <img src="./images/main/card/companyCard01.jpg" alt="card-thumbnail">
-                                </div>
-                                <div class="card-content">
-                                    <h3 class="card-title">
-                                        당근마켓
-                                        <img src="./images/main/company/companyLogo01.png" alt="company-logo">
-                                    </h3>
-                                    <p class="card-desc">
-                                        동네에서 중고 직거래 할 수 있는 지역 기반 중고거래 스마트폰 애플리케이션 서비스. 이전의 중고거래 플랫폼 중고나                                            
-                                    </p>
-                                    <ul class="card-tag">
-                                        <li class="blue-style">홈리빙</li>
-                                        <li class="white-style">지원</li>
-                                        <li class="white-style">모바일앱</li>
-                                    </ul>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="company-card">
-                            <button class="bookmark-btn">
-                                <img src="./images/icons/ico-bookmark.svg" alt="bookmark-icon">
-                                <img src="./images/icons/ico-bookmarkActive.svg" alt="bookmark-icon">
-                            </button>
-                            <button class="share-btn">
-                                <img src="./images/icons/ico-share.svg" alt="share-icon">
-                            </button>
-                            <a href="#">
-                                <div class="img-wrap">
-                                    <img src="./images/main/card/companyCard01.jpg" alt="card-thumbnail">
+                                    <img src="./images/main/card/companyCard01.png" alt="card-thumbnail">
                                 </div>
                                 <div class="card-content">
                                     <h3 class="card-title">
@@ -649,31 +686,41 @@
                     </li>
                 </ul>
                 
-                <div class="pagination">
-                    <button class="prev-btn">
-                        <i></i>
-                    </button>
-                    <ul>
-                        <li class="current"><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                    </ul>
-                    <button class="next-btn active">
-                        <i></i>
-                    </button>
-                </div>
-
+                
+            </div>
+            <div class="pagination">
+                <button class="prev-btn">
+                    <i></i>
+                </button>
+                <ul>
+                    <li class="current"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                </ul>
+                <button class="next-btn active">
+                    <i></i>
+                </button>
+            </div>
+            
+            <div class="newslatter-cont">
                 <div class="newslatter">
                     <h3>
                         내게 필요한 지원사업, <span>가장 먼저 접하세요.</span>
                     </h3>
                     <form action="#" method="post" id="newslatterForm">
                         <div class="col">
-                            <input type="email" placeholder="이메일 주소를 입력해주세요.">
-                            <button class="newslatterEmailBtn">
-                                <img src="./images/icons/ico-newslatter.svg" alt="newslatter">
-                            </button>
+                            <input type="text" placeholder="이름을 입력해주세요." id="newslatterNameInput">
                         </div>
+                        <div class="col">
+                            <input type="email" placeholder="이메일 주소를 입력해주세요." id="newslatterEmailInput">
+                            <button class="newslatterEmailBtn" type="submit">
+                                <img src="./images/icons/ico-newslatter.svg" alt="newslatter">
+                            </button>                                           
+                        </div>
+                        <p>
+                            <img src="./images/icons/ico-info2.svg" alt="info icon">
+                            뉴스레터 구독 시 마케팅 정보 활용 및 개인정보처리방침에 동의한 것으로 간주합니다.
+                        </p>
                     </form>
                 </div>
             </div>

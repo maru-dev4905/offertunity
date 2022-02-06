@@ -8,3 +8,18 @@ termsAllCheckbox.click(function(){
         termsCheckbox.prop('checked',false);
     }
 });
+
+termsCheckbox.click(function(){
+    if($(this).attr("id") != "terms-checkbox01"){
+        if(termsAllCheckbox.is(":checked")){
+            termsAllCheckbox.prop("checked",false)
+        }
+        if(
+            termsCheckbox.eq(1).is(":checked") &&
+            termsCheckbox.eq(2).is(":checked") &&
+            termsCheckbox.eq(3).is(":checked") 
+        ){
+            termsAllCheckbox.prop("checked",true)
+        }
+    }
+})

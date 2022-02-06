@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"">
     <title>Offertunity | All Program</title>
 
 
@@ -41,7 +41,7 @@
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 </head>
 <body>
-    <header>
+    <header class="pc">
         <div class="inner">
             <button class="menu-open-btn">
                 <img src="./images/icons/ico-menu.svg" alt="menu-open-btn">
@@ -115,6 +115,14 @@
             </div>
         </div>
     </header>
+    <header class="mo">
+        <div class="inner">
+            <a href="#">
+                <img src="./images/icons/ico-leftBlackArrow.svg" alt="black arrow">
+            </a>
+            <span>프로그램</span>
+        </div>
+    </header>
     <div class="sub-header">
         <div class="inner">
             <ul>
@@ -150,13 +158,17 @@
                 </li>
             </ul>
         </div>
+        <button class="right-btn">
+            <img src="./images/icons/ico-rightArrow.svg" alt="right arrow">
+        </button>
     </div>
 
     <main>
         <div class="gray-banner">
             <div class="inner">
                 <h2>
-                    이런 프로그램은 어떠세요? <img src="./images/icons/ico-emoticonFinger.svg" alt="emoticon-finger">
+                    이런 프로그램은 어떠세요? 
+                    <object data="./images/icons/ico-emoticonFinger.svg" type="image/svg+xml"></object>
                 </h2>
             </div>
             <div class="recommendation-project-slide slide-inner">
@@ -166,7 +178,7 @@
                             <div class="card">
                                 <a href="#">
                                     <div class="img-wrap">
-                                        <img src="./images/main/card/card01.jpg" alt="card-thumbnail">
+                                        <img src="./images/main/card/card01.png" alt="card-thumbnail">
                                     </div>
                                     <div class="card-content">
                                         <span class="card-subTitle">중소벤처기업부</span>
@@ -184,7 +196,7 @@
                             <div class="card">
                                 <a href="#">
                                     <div class="img-wrap">
-                                        <img src="./images/main/card/card02.jpg" alt="card-thumbnail">
+                                        <img src="./images/main/card/card02.png" alt="card-thumbnail">
                                     </div>
                                     <div class="card-content">
                                         <span class="card-subTitle">인천시 벤처기업부</span>
@@ -201,7 +213,7 @@
                             <div class="card">
                                 <a href="#">
                                     <div class="img-wrap">
-                                        <img src="./images/main/card/card03.jpg" alt="card-thumbnail">
+                                        <img src="./images/main/card/card03.png" alt="card-thumbnail">
                                     </div>
                                     <div class="card-content">
                                         <span class="card-subTitle">중소벤처기업부</span>
@@ -261,7 +273,7 @@
                         <div class="card">
                             <a href="./suportProjectSingle.html">
                                 <div class="img-wrap">
-                                    <img src="./images/main/card/card07.jpg" alt="card-thumbnail">
+                                    <img src="./images/main/card/card07.png" alt="card-thumbnail">
                                 </div>
                                 <div class="card-content">
                                     <span class="card-subTitle">중소벤처기업부</span>
@@ -279,7 +291,7 @@
                         <div class="card">
                             <a href="#">
                                 <div class="img-wrap">
-                                    <img src="./images/main/card/card01.jpg" alt="card-thumbnail">
+                                    <img src="./images/main/card/card01.png" alt="card-thumbnail">
                                 </div>
                                 <div class="card-content">
                                     <span class="card-subTitle">중소벤처기업부</span>
@@ -297,7 +309,7 @@
                         <div class="card">
                             <a href="#">
                                 <div class="img-wrap">
-                                    <img src="./images/main/card/card01.jpg" alt="card-thumbnail">
+                                    <img src="./images/main/card/card01.png" alt="card-thumbnail">
                                 </div>
                                 <div class="card-content">
                                     <span class="card-subTitle">중소벤처기업부</span>
@@ -315,7 +327,7 @@
                         <div class="card">
                             <a href="#">
                                 <div class="img-wrap">
-                                    <img src="./images/main/card/card01.jpg" alt="card-thumbnail">
+                                    <img src="./images/main/card/card01.png" alt="card-thumbnail">
                                 </div>
                                 <div class="card-content">
                                     <span class="card-subTitle">중소벤처기업부</span>
@@ -333,7 +345,7 @@
                         <div class="card">
                             <a href="#">
                                 <div class="img-wrap">
-                                    <img src="./images/main/card/card01.jpg" alt="card-thumbnail">
+                                    <img src="./images/main/card/card01.png" alt="card-thumbnail">
                                 </div>
                                 <div class="card-content">
                                     <span class="card-subTitle">중소벤처기업부</span>
@@ -351,7 +363,7 @@
                         <div class="card">
                             <a href="#">
                                 <div class="img-wrap">
-                                    <img src="./images/main/card/card01.jpg" alt="card-thumbnail">
+                                    <img src="./images/main/card/card01.png" alt="card-thumbnail">
                                 </div>
                                 <div class="card-content">
                                     <span class="card-subTitle">중소벤처기업부</span>
@@ -366,23 +378,23 @@
                         </div>
                     </li>
                     <li class="full-grid">
-                        <div class="program-slide2 slide-inner">
-                            <div class="program-swiper2 swiper">
+                        <div class="event-slide slide-inner">
+                            <div class="event-swiper swiper">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <img class="pc" src="./images/main/visual/s-banner01.jpg" alt="banner-img">
+                                        <img class="pc" src="./images/main/visual/s-banner01.png" alt="banner-img">
                                         <img class="mo" src="./images/main/visual/s-banner01-mo.svg" alt="banner-img">
                                     </div>
                                     <div class="swiper-slide">
-                                        <img class="pc" src="./images/main/visual/s-banner01.jpg" alt="banner-img">
+                                        <img class="pc" src="./images/main/visual/s-banner01.png" alt="banner-img">
                                         <img class="mo" src="./images/main/visual/s-banner01-mo.svg" alt="banner-img">
                                     </div>
                                     <div class="swiper-slide">
-                                        <img class="pc" src="./images/main/visual/s-banner01.jpg" alt="banner-img">
+                                        <img class="pc" src="./images/main/visual/s-banner01.png" alt="banner-img">
                                         <img class="mo" src="./images/main/visual/s-banner01-mo.svg" alt="banner-img">
                                     </div>
                                 </div>
-                                <div class="program2-pagination swiper-pagination center"></div>
+                                <div class="event-pagination swiper-pagination "></div>
                             </div>
                             <span>
                                 <i></i>
@@ -394,7 +406,7 @@
                         <div class="card">
                             <a href="#">
                                 <div class="img-wrap">
-                                    <img src="./images/main/card/card01.jpg" alt="card-thumbnail">
+                                    <img src="./images/main/card/card01.png" alt="card-thumbnail">
                                 </div>
                                 <div class="card-content">
                                     <span class="card-subTitle">중소벤처기업부</span>
@@ -412,7 +424,7 @@
                         <div class="card">
                             <a href="#">
                                 <div class="img-wrap">
-                                    <img src="./images/main/card/card01.jpg" alt="card-thumbnail">
+                                    <img src="./images/main/card/card01.png" alt="card-thumbnail">
                                 </div>
                                 <div class="card-content">
                                     <span class="card-subTitle">중소벤처기업부</span>
@@ -430,7 +442,7 @@
                         <div class="card">
                             <a href="#">
                                 <div class="img-wrap">
-                                    <img src="./images/main/card/card01.jpg" alt="card-thumbnail">
+                                    <img src="./images/main/card/card01.png" alt="card-thumbnail">
                                 </div>
                                 <div class="card-content">
                                     <span class="card-subTitle">중소벤처기업부</span>
@@ -448,7 +460,7 @@
                         <div class="card">
                             <a href="#">
                                 <div class="img-wrap">
-                                    <img src="./images/main/card/card01.jpg" alt="card-thumbnail">
+                                    <img src="./images/main/card/card01.png" alt="card-thumbnail">
                                 </div>
                                 <div class="card-content">
                                     <span class="card-subTitle">중소벤처기업부</span>
@@ -466,7 +478,7 @@
                         <div class="card">
                             <a href="#">
                                 <div class="img-wrap">
-                                    <img src="./images/main/card/card01.jpg" alt="card-thumbnail">
+                                    <img src="./images/main/card/card01.png" alt="card-thumbnail">
                                 </div>
                                 <div class="card-content">
                                     <span class="card-subTitle">중소벤처기업부</span>
@@ -484,7 +496,7 @@
                         <div class="card">
                             <a href="#">
                                 <div class="img-wrap">
-                                    <img src="./images/main/card/card01.jpg" alt="card-thumbnail">
+                                    <img src="./images/main/card/card01.png" alt="card-thumbnail">
                                 </div>
                                 <div class="card-content">
                                     <span class="card-subTitle">중소벤처기업부</span>
@@ -500,20 +512,21 @@
                     </li>
                 </ul>
                 
-                <div class="pagination">
-                    <button class="prev-btn">
-                        <i></i>
-                    </button>
-                    <ul>
-                        <li class="current"><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                    </ul>
-                    <button class="next-btn active">
-                        <i></i>
-                    </button>
-                </div>
-
+            </div>
+            <div class="pagination">
+                <button class="prev-btn">
+                    <i></i>
+                </button>
+                <ul>
+                    <li class="current"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                </ul>
+                <button class="next-btn active">
+                    <i></i>
+                </button>
+            </div>
+            <div class="newslatter-cont">
                 <div class="newslatter">
                     <h3>
                         내게 필요한 지원사업, <span>가장 먼저 접하세요.</span>
@@ -528,6 +541,10 @@
                                 <img src="./images/icons/ico-newslatter.svg" alt="newslatter">
                             </button>                                           
                         </div>
+                        <p>
+                            <img src="./images/icons/ico-info2.svg" alt="info icon">
+                            뉴스레터 구독 시 마케팅 정보 활용 및 개인정보처리방침에 동의한 것으로 간주합니다.
+                        </p>
                     </form>
                 </div>
             </div>
@@ -615,5 +632,6 @@
     <script src="./js/popup.js"></script>
     <script src="./js/select.js"></script>
     <script src="./js/btnClick.js"></script>
+    <script src="./js/responsive.js"></script>
 </body>
 </html>

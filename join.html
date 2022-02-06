@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"">
     <title>Offertunity | Join</title>
 
 
@@ -41,7 +41,7 @@
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 </head>
 <body class="join">
-    <header>
+    <header class="pc">
         <div class="inner">
             <button class="menu-open-btn">
                 <img src="./images/icons/ico-menu.svg" alt="menu-open-btn">
@@ -89,37 +89,50 @@
             </div>
         </div>
     </header>
+    <header class="mo">
+        <div class="inner">
+            <a href="#">
+                <img src="./images/icons/ico-leftBlackArrow.svg" alt="black icon">
+            </a>
+            <span>회원가입</span>
+        </div>
+    </header>
     <main>
-        <div class="obj-group">
+        <div class="obj-group pc">
             <div class="circle"></div>
             <div class="circle"></div>
         </div>
         <div class="join-container">
+            <h3>회원유형을 선택해주세요.</h3>
             <ul>
                 <li>
-                    <img src="./images/sub/join/img01.svg" alt="join-img">
-                    <h2>스타트업 회원</h2>
-                    <p>
-                        지원사업부터 투자유치까지 기회를 얻고 싶다면 
-                        <br>
-                        스타트업 회원으로 가입해주세요.                        
-                    </p>
                     <a href="./startupJoin.html">
-                        선택하기
-                        <i></i>
+                        <img src="./images/sub/join/img01.svg" alt="join-img">
+                        <h2>스타트업 회원</h2>
+                        <p>
+                            지원사업부터 투자유치까지 기회를 얻고 싶다면 
+                            <br>
+                            스타트업 회원으로 가입해주세요.                        
+                        </p>
+                        <span>
+                            선택하기
+                            <i></i>
+                        </span>
                     </a>
                 </li>
                 <li>
-                    <img src="./images/sub/join/img02.svg" alt="join-img">
-                    <h2>파트너 회원</h2>
-                    <p>
-                        성장 가능성과 실행력을 가진 좋은 스타트업을 
-                        <br>
-                        찾고 있다면 파트너 회원으로 가입해주세요.                        
-                    </p>
                     <a href="#">
-                        선택하기
-                        <i></i>
+                        <img src="./images/sub/join/img02.svg" alt="join-img">
+                        <h2>파트너 회원</h2>
+                        <p>
+                            성장 가능성과 실행력을 가진 좋은 스타트업을 
+                            <br>
+                            찾고 있다면 파트너 회원으로 가입해주세요.                        
+                        </p>
+                        <span href="#">
+                            선택하기
+                            <i></i>
+                        </span>
                     </a>
                 </li>
             </ul>

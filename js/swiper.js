@@ -38,11 +38,12 @@ var programSlide = new Swiper(".program-swiper", {
     }
 });
 
-var programSlide2 = new Swiper(".program-swiper2", {
+var eventSlide = new Swiper(".event-swiper", {
     loop: true,
     slidesPerView: "auto",
     pagination: {
-        el: ".program2-pagination",
+        el: ".event-pagination",
+        clickable: true,
     },
     autoplay: {
         delay: 2500,
@@ -93,6 +94,7 @@ var recommendationProjectSlide = new Swiper(".recommendation-project-swiper", {
     }
 });
 
+
 var companyTeamSlide = new Swiper(".team-slide", {
     navigation: {
         nextEl: ".team-img-next-btn",
@@ -102,3 +104,19 @@ var companyTeamSlide = new Swiper(".team-slide", {
     spaceBetween: 20,
     speed:750,
 })
+
+var workstationSlide = new Swiper(".workstationSlide", {
+    slidesPerView: "auto",
+    spaceBetween:20,
+    speed:750,
+    loop: false,
+    
+    breakpoints: {
+        768: {
+            spaceBetween:20,
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+            loop: true,
+        }
+    }
+});

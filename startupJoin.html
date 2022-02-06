@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"">
     <title>Offertunity | startup - Join</title>
 
 
@@ -42,7 +42,7 @@
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 </head>
 <body class="join startup">
-    <header>
+    <header class="pc">
         <div class="inner">
             <button class="menu-open-btn">
                 <img src="./images/icons/ico-menu.svg" alt="menu-open-btn">
@@ -90,6 +90,14 @@
             </div>
         </div>
     </header>
+    <header class="mo">
+        <div class="inner">
+            <a href="#">
+                <img src="./images/icons/ico-leftBlackArrow.svg" alt="black arrow">
+            </a>
+            <span>스타트업 회원가입</span>
+        </div>
+    </header>
     <main>
         <div class="obj-group">
             <div class="circle"></div>
@@ -117,9 +125,17 @@
                 </div>
                 <div class="col">
                     <input type="password" placeholder="비밀번호를 입력해주세요" id="passwordInput" autocomplete="on">
+                    <!-- password 보기/안보기 기능 추가 -->
+                    <button class="password-view-btn" type="button">
+                        <i></i>
+                    </button>                
                 </div>
                 <div class="col">
                     <input type="password" placeholder="비밀번호를 다시 입력해주세요" id="passwordInput2" autocomplete="on">
+                    <!-- password 보기/안보기 기능 추가 -->
+                    <button class="password-view-btn" type="button">
+                        <i></i>
+                    </button>                
                 </div>
                 <ul class="terms-container">
                     <li>
@@ -254,5 +270,6 @@
     <script src="./js/header.js"></script>
     <script src="./js/popup.js"></script>
     <script src="./js/termsCheck.js"></script>
+    <script src="./js/passwordView.js"></script>
 </body>
 </html>

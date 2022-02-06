@@ -41,3 +41,29 @@ $(".bookmark-btn").click(function(){
 $(".newslatter #newslatterEmailInput").focus(function(){
     $(".newslatter .col").addClass("active");
 });
+
+$(".menu-open-btn").click(function(){
+    $(".menu").addClass("active");
+});
+
+$(".menu-close-btn").click(function(){
+    $(".menu").removeClass("active");
+});
+
+
+// 지원사업 관리 눌렀을 때
+
+var superintendOpenBtn      = $(".superintend-open-btn");
+var superintendCloseBtn     = $(".superintend-close-btn");
+var superintendContent      = $(".superintend-content");
+var dim                     = $(".dim");
+
+superintendOpenBtn.click(function(){
+    superintendContent.addClass("active");
+    dim.addClass("active");
+});
+
+superintendCloseBtn.click(function(){
+    superintendContent.removeClass("active");
+    dim.removeClass("active");
+});

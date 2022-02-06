@@ -49,6 +49,9 @@ $("input[type='file']").on('change',function(){
         var fileName = th.val();
     
         th.siblings("p.upload-name").text(fileName);
+        th.next("span").css({
+            opacity:0
+        })
     }
 });
 
@@ -62,3 +65,17 @@ $("#myStartupModifyForm .fileRemoveBtn").click(function(){
         display:"flex"
     })
 });
+
+$(".input-anim .select-btn").click(function(){
+    var th = $(this);
+    th.closest(".input-anim").addClass("active");
+});
+$(".input-anim input").change(function(){
+    var th = $(this);
+
+    if(th.val() == 0){
+        th.parent().removeClass("active");
+    }else{
+        th.parent().addClass("active");
+    }
+})

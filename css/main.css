@@ -104,66 +104,11 @@
 
 
 /* program slide */
-
+/* 
 .program-slide2{
     margin-top: 78px;
-}
-.program-slide2 .program-swiper2{
-    border-radius: 25px;
-}
-.program-slide2 .swiper-slide{
-    height: auto !important;
-}
-.program-slide2 .swiper-slide img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.program-slide2 .program-swiper2 .swiper-slide img.pc{
-    display: block;
-}
-.program-slide2 .program-swiper2 .swiper-slide img.mo{
-    display: none;
-}
-.program-slide2 span{
-    font-size: 11px;
-    color: #ccc;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 2px;
-    width: 100%;
-    max-width: 960px;
-    margin: 8px auto 0;
-}
-.program-slide2 span i{
-    width: 14px;
-    height: 14px;
-    display: inline-block;
-    background: url("../images/icons/ico-info.svg") no-repeat center / cover;
-}
-.program2-pagination{
-    display: flex;
-    gap: 6px;
-    position: absolute;
-    bottom: 14px !important;
-    right: 25px !important;
-    left: auto !important;
-    width: max-content !important;
-}
-.program2-pagination span{
-    display: inline-block;
-    width: 6px;
-    height: 6px;
-    background-color: #c4c4c4;
-    opacity: 1 !important;
-    transition: 0.3s ease;
-}
-.program2-pagination span.swiper-pagination-bullet-active{
-    background-color: #5F53EF;
-    width: 20px;
-    border-radius: 25px;
-}
+} */
+
 
 /* program slide */
 
@@ -178,6 +123,9 @@
     grid-template-columns: repeat(3, 300px);
     grid-row-gap: 30px;
     justify-content: space-between;
+}
+.recommendation-list .program-slide{
+    display: none;
 }
 .recommendation-list .img-card .img-wrap{
     border-radius: 25px;
@@ -346,6 +294,16 @@
     transform: translateX(-50%);
     z-index: 1;
 }
+.subscription .character-img{
+    width: calc(100% - 40px);
+    max-width: 470px;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
 
 /* subscription */
 
@@ -432,8 +390,17 @@
     
     .recommendation-list{
         grid-column-gap: 10px;
-        grid-row-gap: 15px;
-        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 20px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .recommendation-list > .card{
+        display: none;
+    }
+    .recommendation-list > .card:first-child + .img-card{
+        display: none;
+    }
+    .recommendation-list .program-slide{
+        display: block;
     }
 
     main{
@@ -445,6 +412,12 @@
         grid-column-gap: 10px;
         width: 100%;
         overflow-x: scroll;
+        
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-points-x: repeat(300px);
+        scroll-snap-type: mandatory;
     }
     .category-list .inner{
         overflow-x: scroll;

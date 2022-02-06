@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"">
     <title>Offertunity | startup workstation</title>
 
 
@@ -47,18 +47,24 @@
         <div class="inner">
             <h1 class="logo">
                 <a href="./index.html">
-                    <img src="./images/common/logo3.svg" alt="logo">
+                    <img src="./images/common/logo3.svg" alt="logo" class="pc">
+                    <img src="./images/common/logo-workstation.svg" alt="logo" class="mo">
                 </a>
             </h1>
             
             <div class="header-right">
                 <a href="#">
-                    <img src="./images/icons/ico-leftGrayArrow.svg" alt="leftGrayArrow">
-                    워크스테이션 나가기
+                    <img class="pc" src="./images/icons/ico-leftGrayArrow.svg" alt="leftGrayArrow">
+                    <img class="mo" src="./images/icons/ico-back.svg" alt="back icon">
+                    <span>
+                        워크스테이션 나가기
+                    </span>
                 </a>
                 <a href="#" class="home-link">
                     <img src="./images/icons/ico-home.svg" alt="home">
-                    기업 홈으로
+                    <span>
+                        기업 홈으로
+                    </span>
                 </a>
             </div>
         </div>
@@ -69,12 +75,14 @@
             <div class="col">
                 <h2>
                     오늘의
-                    <br>
-                    <span class="fc-purple">이지프레스</span>를 알려드릴게요.
+                    <br class="pc">
+                    <span class="fc-purple">이지프레스</span>를 
+                    <br class="mo">
+                    알려드릴게요.
                 </h2>
                 <img src="./images/sub/mypage/character02.svg" alt="character">
             </div>
-            <div class="col-3">
+            <div class="col-3 pc">
                 <div class="content">
                     <span class="fc-purple">My Startup</span>
                     <div class="profile">
@@ -122,6 +130,7 @@
                     </ul>
                 </div>
             </div>
+            
             <div class="program-section">
                 <div class="flex spaceBetween">
                     <h3>신청 프로그램</h3>
@@ -180,7 +189,7 @@
         </div>
     </main>
     <footer class="footer-style2">
-        <p>(c) OFFERTUNITY.</p>
+        <p>(C) OFFERTUNITY.</p>
     </footer>
 
     
@@ -190,5 +199,6 @@
     <script src="./js/popup.js"></script>
     <script src="./js/form.js"></script>
     <script src="./js/chart.js"></script>
+    <script src="./js/responsive.js"></script>
 </body>
 </html>

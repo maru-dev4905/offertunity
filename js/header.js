@@ -53,6 +53,7 @@ $(window).scroll(function(){
             $(".company-content2").offset().top
             - $("header").innerHeight()
             - $(".project-tab").innerHeight()
+            - 20
             <= 
             $(window).scrollTop()
         ){
@@ -63,6 +64,7 @@ $(window).scroll(function(){
             $(".company-content3").offset().top
             - $("header").innerHeight()
             - $(".project-tab").innerHeight()
+            - 20
             <= 
             $(window).scrollTop()
         ){
@@ -73,6 +75,7 @@ $(window).scroll(function(){
             $(".company-content4").offset().top
             - $("header").innerHeight()
             - $(".project-tab").innerHeight()
+            - 20
             <= 
             $(window).scrollTop()
         ){
@@ -83,6 +86,7 @@ $(window).scroll(function(){
             $(".company-content5").offset().top
             - $("header").innerHeight()
             - $(".project-tab").innerHeight()
+            - 20
             <= 
             $(window).scrollTop()
         ){

@@ -114,23 +114,23 @@
 .login form input.error{
     border: 1px solid #FF6767;
 }
-.login form input#login-pwInput + .password-view-btn{
-    position: absolute;
+.password-view-btn{
+    position: absolute !important;
     top: 50%;
     right: 36px;
     transform: translateY(-50%);
-    width: max-content;
-    padding: 0;
+    width: max-content !important;
+    padding: 0 !important;
 }
-.login form input#login-pwInput + .password-view-btn i{
+.password-view-btn i{
     width: 24px;
     height: 24px;
-    background: url('../images/icons/ico-passwordView.svg') no-repeat center / cover;
+    background: url('../images/icons/ico-passwordView2.svg') no-repeat center / cover;
     display: block;
     transition: 0.25s ease;
 }
-.login form input#login-pwInput + .password-view-btn.show i{
-    background: url('../images/icons/ico-passwordViewActive.svg') no-repeat center / cover;
+.password-view-btn.show i{
+    background: url('../images/icons/ico-passwordView.svg') no-repeat center / cover;
 }
 .login #loginForm .col:nth-child(2){
     margin-bottom: 10px;
@@ -226,6 +226,9 @@
     margin: 0 auto;
     padding: 150px 0 240px;
 }
+.join .join-container h3{
+    display: none;
+}
 .join-container ul{
     display: flex;
     justify-content: space-between;
@@ -234,13 +237,15 @@
     border-radius: 25px;
     border: 1px solid #eee;
     transition: 0.3s ease;
-    padding: 55px 0;
     width: 362px;
+    background-color: #fff;
+}
+.join-container li a{
+    padding: 55px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
 }
 .join .col{
     margin-bottom: 20px;
@@ -266,7 +271,7 @@
     font-weight: 300;
     margin-bottom: 36px;
 }
-.join-container li a{
+.join-container li span{
     width: 154px;
     height: 47px;
     border-radius: 50px;
@@ -280,18 +285,18 @@
     color: #5F53EF;
     transition: 0.3s ease;
 }
-.join-container li a i{
+.join-container li span i{
     width: 18px;
     height: 18px;
     display: block;
     background: url("../images/icons/ico-rightPurpleArrow.svg") no-repeat center / cover;
     transition: 0.3s ease;
 }
-.join-container li a:hover{
+.join-container li a:hover span{
     background-color: #5F53EF;
     color: #fff;
 }
-.join-container li a:hover i{
+.join-container li a:hover span i{
     background: url("../images/icons/ico-rightWhiteArrow.svg") no-repeat center / cover;
 }
 
@@ -315,6 +320,7 @@
     color: #000;
     transition: 0.3s ease;
     font-size: 14px;
+    background-color: #fff;
 }
 .join form input:focus::placeholder{
     font-size: 15.5px;
@@ -391,6 +397,7 @@
     transition: 0.3s ease;
     position: relative;
     z-index: -1;
+    border: none;
 }
 .join form ul li span i{
     width: 100%;
@@ -510,6 +517,111 @@
     .login .sec-title{
         padding-top: 50px;
     }
+    .join .join-container{
+        padding-top: 54px;
+        padding-bottom: 100px;
+    }
+    .join .join-container h3{
+        display: block;
+        text-align: center;
+        margin-bottom: 45px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .join-container ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .join-container li{
+        width: calc(100% - 20px);
+        max-width: 320px;
+        padding: 40px 0;
+    }
+    .join-container li h2{
+        margin-bottom: 12px;
+    }
+    .join-container li p{
+        font-size: 13px;
+        margin-bottom: 25px;
+    }
+
+    .join.startup .join-container ul{
+        gap: 0;
+    }
+    .join-title h2{
+        font-size: 20px;
+    }
+    .join-container li a{
+        padding: 0;
+    }
+    .join-container li span{
+        width: 135px;
+        height: 40px;
+    }
+    .join-container li span i{
+        width: 14px;
+        height: 14px;
+    }
+    .join form input{
+        height: 45px;
+        padding: 0 20px;
+        font-size: 13px;
+    }
+    .join form .certified-btn,
+    .join form .numberCheck-btn{
+        width: 64px;
+        height: 34px;
+        font-size: 12px;
+    }
+    .join .col{
+        margin-bottom: 10px;
+    }
+    .join form ul{
+        padding: 20px;
+    }
+    .join form ul li:first-child label{
+        font-size: 14px;
+    }
+    .join form button[type="submit"]{
+        height: 45px;
+        font-size: 13px;
+    }
+
+
+    .login .sec-title span{
+        font-size: 14px;
+    }
+    .login .sec-title h2{
+        font-size: 20px;
+        margin-top: 5px;
+    }
+    .login .col button{
+        height: 45px;
+        padding: 0 20px;
+    }
+    .login .col button span{
+        font-size: 13px;
+    }
+    .login .col button.email-btn span{
+        font-size: 12px;
+    }
+    .login .col button.email-btn img{
+        width: 10px;
+        height: 10px;
+    }
+    .login form input{
+        height: 45px;
+        padding: 0 20px;
+        font-size: 13px;
+    }
+    .password-view-btn{
+        right: 20px;
+    }
+    .login .flex{
+        font-size: 12px;
+    }
+
 }
 
 /* responsive 768 */
