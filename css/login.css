@@ -476,7 +476,7 @@
     width: 100%;
     height: auto;
     left: 0;
-    top: 0;
+    top: -15px;
 }
 .join-success .join-container a{
     width: 213px;
@@ -514,6 +514,10 @@
 /* responsive 768 */
 
 @media all and (max-width:768px){
+    .join-success .join-container p{
+        margin-bottom: 290px;
+    }
+    
     .login .sec-title{
         padding-top: 50px;
     }
@@ -573,6 +577,7 @@
         width: 64px;
         height: 34px;
         font-size: 12px;
+        right: 7px;
     }
     .join .col{
         margin-bottom: 10px;

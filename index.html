@@ -73,13 +73,13 @@
                     <img src="./images/icons/ico-search.svg" alt="search-icon">
                 </button>
                 <!-- login 전에는 login-before에 active 클래스 추가 시 나옵니다. -->
-                <div class="login-before active">
+                <div class="login-before">
                     <a href="./login.html"><span>Login</span></a>
                     <a href="./join.html"><span>Join</span></a>
                 </div>
 
                 <!-- login 후에는 login-after에 active 클래스 추가 시 나옵니다. -->
-                <div class="login-after ">
+                <div class="login-after  active">
                     <button class="alarm">
                         <img src="./images/icons/ico-alarm.svg" alt="alarm">
                     </button>
@@ -121,8 +121,6 @@
         <button class="menu-close-btn" type="button">
             <img src="./images/icons/ico-close.svg" alt="close icon">
         </button>
-        <p>오퍼튜니티에 로그인하시고 새</p>
-        <a href="./login.html">로그인/회원가입 하기</a>
         <ul>
             <li>
                 <a href="./allProgram.html">프로그램</a>
@@ -137,6 +135,22 @@
                 <a href="#">데모데이</a>
             </li>
         </ul>
+        <!-- login 전에는 login-cont에 before 추가 -->
+        <!-- login 후에는 login-cont에 after  추가 -->
+        <div class="login-cont after">
+            <div class="login-before">
+                <a href="#">Login</a>
+                <a href="./join.html">Join</a>
+            </div>
+            <div class="login-after  active">
+                <button class="alarm">
+                    <img src="./images/icons/ico-alarm.svg" alt="alarm">
+                </button>
+                <div class="profile">
+                    <img src="./images/icons/ico-profile.svg" alt="profile">
+                </div>
+            </div>
+        </div>
     </div>
 
     <main>
@@ -868,7 +882,45 @@
     
     <div class="alarm-popup">
         <div class="inner">
+            <div class="alarm-popup-title">
+                <h2>알림</h2>
+                <button class="alarm-popup-close-btn">
+                    <img src="./images/icons/ico-close.svg" alt="close icon">
+                </button>
+            </div>
             <ul>
+                <li>
+                    <a href="#">
+                        <div class="alarm-top">
+                            <div class="alarm-kind">
+                                <img src="./images/icons/ico-emailPopup.svg" alt="popup-icon">
+                                오퍼튜니티
+                            </div>
+                            <span class="alarm-time">3시간 전</span>
+                        </div>
+                        <div class="alarm-content">
+                            <p>
+                                <span>초기창업 패키지 글로벌 기술 사업화 프로그램 모집공고</span> 프로그램 신청을 완료했습니다.
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="alarm-top">
+                            <div class="alarm-kind">
+                                <img src="./images/icons/ico-emailPopup.svg" alt="popup-icon">
+                                오퍼튜니티
+                            </div>
+                            <span class="alarm-time">3시간 전</span>
+                        </div>
+                        <div class="alarm-content">
+                            <p>
+                                <span>초기창업 패키지 글로벌 기술 사업화 프로그램 모집공고</span> 프로그램 신청을 완료했습니다.
+                            </p>
+                        </div>
+                    </a>
+                </li>
                 <li>
                     <a href="#">
                         <div class="alarm-top">

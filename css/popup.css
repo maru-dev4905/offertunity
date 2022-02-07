@@ -107,6 +107,11 @@
     opacity: 0;
     visibility: hidden;
     width: 100vw;
+    transition: 0.3s ease;
+}
+.alarm-popup ul{
+    position: absolute;
+    z-index: 10000;
 }
 .alarm-popup.show{
     opacity: 1;
@@ -168,6 +173,9 @@
 .alarm-popup .alarm-content span{
     color: #5F53EF;
 }
+.alarm-popup-title{
+    display: none;
+}
 
 /* popup */
 
@@ -192,5 +200,45 @@
     .emailPopup .emailPopup-btnGroup button{
         height: 50px;
         font-size: 13px;
+    }
+
+
+
+    .alarm-popup{
+        background-color: #fff;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        transform: none;
+    }
+    .alarm-popup-title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 33px;
+    }
+    .alarm-popup .inner{
+        height: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 20px;
+    }
+    .alarm-popup ul{
+        position: static;
+        width: 100%;
+        height: calc(100vh - 130px);
+        overflow-y: scroll;
+    }
+    .alarm-popup li{
+        width: 100%;
+        padding: 0;
+        border-bottom: 2px solid #eee;
+        margin-bottom: 0;
+        border-radius: 0;
+        word-break: keep-all;
+    }
+    .alarm-popup .alarm-top{
+        border-bottom: none;
     }
 }

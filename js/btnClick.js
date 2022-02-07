@@ -44,10 +44,12 @@ $(".newslatter #newslatterEmailInput").focus(function(){
 
 $(".menu-open-btn").click(function(){
     $(".menu").addClass("active");
+    $(".dim").addClass("active");
 });
 
 $(".menu-close-btn").click(function(){
     $(".menu").removeClass("active");
+    $(".dim").removeClass("active");
 });
 
 

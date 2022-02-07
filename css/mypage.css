@@ -287,9 +287,11 @@
     .mypage-content1 .right{
         display: flex;
         gap: 10px;
+        width: 100%;
     }
     .mypage-content1 .right button{
         width: 135px;
+        width: 100%;
         margin: 0;
     }
     .mypage-content1 .left h3{

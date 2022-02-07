@@ -230,6 +230,17 @@
     z-index: 100;
     background: linear-gradient(270deg, #FFFFFF -28.95%, rgba(255, 255, 255, 0) 100%);
 }
+.company-content2 .company-team-img-wrap::after{
+    content: "";
+    width: 65px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: linear-gradient(270deg, #FFFFFF -28.95%, rgba(255, 255, 255, 0) 100%);
+    transform: rotate(-180deg);
+}
 .company-content2 button.prev-btn{
     position: absolute;
     left: -80px;
@@ -270,7 +281,7 @@
     color: #191919;
     margin-bottom: 18px;
 }
-.company-content3 .table-content{
+.company-content3 .table-content .table-wrap{
     border-radius: 20px;
     border: 1px solid #E7E7E7;
     overflow: hidden;
@@ -499,7 +510,7 @@
     border: none;
 }
 .startupWorkstation .col-3 .content:nth-child(2) h3{
-    color: #5344FF;
+    color: #5F53EF;
     font-size: 18px;
     margin-bottom: 15px;
 }
@@ -518,7 +529,7 @@
 }
 
 .startupWorkstation .col-3 .content:nth-child(3){
-    background-color: #5344FF;
+    background-color: #6B53EB;
     overflow: hidden;
 }
 .startupWorkstation .col-3 .content:nth-child(3) span{
@@ -528,10 +539,12 @@
     color: #E0DDFF;
     display: block;
     font-weight: 300;
+    margin-bottom: 15px;
 }
 #stateChart{
     width: 100%;
     margin-top: 20px;
+    transform: scale(1.25);
 }
 .startupWorkstation .col-3 .content:nth-child(3) ul{
     margin-top: 70px;
@@ -578,7 +591,7 @@
     align-items: flex-end;
     left: 50%;
     transform: translateX(-50%);
-    top: 132.5px;
+    top: 147.5px;
     padding-left: 10px;
 }
 .startupWorkstation .col-3 .content:nth-child(3) em span{
@@ -592,7 +605,7 @@
     border-radius: 20px;
     background-color: #fff;
     padding: 40px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 .startupWorkstation .program-section h3{
     font-size: 22px;
@@ -604,6 +617,7 @@
     display: flex;
     gap: 5px;
     align-items: center;
+    padding-bottom: 34px;
 }
 .program-list{
     display: flex;
@@ -1070,6 +1084,9 @@
     display: flex;
     align-items: center;
 }
+.person-content li:last-child::after{
+    display: none;
+}
 .person-content li:after{
     content: "";
     width: 1px;
@@ -1106,7 +1123,41 @@
 
 
 @media all and (max-width:768px){
-    
+    .company-content3{
+        width: 100%;
+    }
+    .company-content2 h4{
+        width: 100%;
+    }
+    .company-content2 .company-team h4{
+        width: calc(100% - 80px);
+    }
+    .company-content3{
+    }
+    .company-content3 .table-content:nth-of-type(2){
+        overflow-x: scroll;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-points-x: repeat(300px);
+        scroll-snap-type: mandatory;
+        max-width: 100%;
+    }
+    .company-content3 .table-content:nth-of-type(2) .table-wrap{
+        min-width: max-content;
+        width: 100%;
+    }
+    .company-content3 .table-content:nth-of-type(2) li{
+        padding: 0 5px;
+        height: 48.6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .company-content3 .table-content li{
+        font-size: 12px;
+        text-align: center;
+        word-break: keep-all;
+    }
 
     .company-content2 button.team-img-prev-btn, .company-content2 button.team-img-next-btn{
         display: none;
@@ -1287,14 +1338,14 @@
         font-size: 10px;
     }
     .startupWorkstation .col-3 .content:nth-child(3) em{
-        top: 114px;
+        top: 126px;
         padding-left: 3.5px;
     }
     .startupWorkstation .program-section li{
         width: 100%;
-        background-color: #fff;
     }
     .startupWorkstation .program-section a{
+        background-color: #fff;
         padding-bottom: 26px;
     }
     .startupWorkstation .program-section{
@@ -1380,15 +1431,7 @@
         width: 100%;
         margin-bottom: 25px;
     }
-    .company-content3 .table-content li{
-        font-size: 12px;
-        text-align: center;
-        word-break: keep-all;
-        padding: 15px 20px;
-    }
-    .company-content3 .table-content{
-        width: max-content;
-    }
+
     .company-content3 .table-content:last-child .table-header,
     .company-content3 .table-content:last-child .table-body{
         display: grid;
@@ -1399,9 +1442,6 @@
         display: grid;
         grid-template-columns: repeat(3,1fr);
 
-    }
-    .company-content3{
-        overflow-x: scroll;
     }
 
     .company-content4 .news strong{

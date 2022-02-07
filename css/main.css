@@ -336,7 +336,7 @@
 
 @media all and (max-width:920px){
     main{
-        padding-top: 60px;
+        padding-top: 59px;
     }
     .program-slide2 span{
         max-width: calc(100vw - 250px);
@@ -348,6 +348,12 @@
 /* responsive 768 */
 
 @media all and (max-width:768px){
+    .subscription .sec-title p{
+        font-size: 18px;
+    }
+    .subscription .sec-title h2{
+        font-size: 18px;
+    }
 
     .banner-slide.slide-inner > .banner-swiper{
         max-width: 100%;
@@ -401,6 +407,8 @@
     }
     .recommendation-list .program-slide{
         display: block;
+        width: calc(100vw + 20px);
+        margin-left: -20px;
     }
 
     main{
@@ -461,6 +469,14 @@
         width: auto;
         max-width: 100%;
     }
+    
+    .recommendation-list .img-card .img-wrap{
+        width: calc(100vw - 40px);
+    }
+    .startup-swiper{
+        max-width: 100vw !important;
+        padding: 0 20px !important;
+    }
 }
 
 /* responsive 768 */
@@ -475,3 +491,17 @@
 }
 
 /* responsive 600 */
+
+
+
+
+
+/* responsive 500 */
+
+@media all and (max-width:500px){
+    .recommendation-list .img-card .img-wrap{
+        height: calc(100vw - 40px);
+    }
+}
+
+/* responsive 500 */
